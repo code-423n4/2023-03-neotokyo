@@ -1,0 +1,1977 @@
+1,15,?,High
+2,7,High,Mid
+3,2,Low,Low
+4,5,High,Low
+5,3,Medium,Low
+7,2,Low,Low
+9,5,High,Low
+10,5,High,Low
+11,6,Medium High,Mid
+13,4,Medium High,Low
+14,3,Medium,Low
+15,3,Medium,Low
+17,2,Low,Low
+18,4,Medium High,Low
+20,5,Medium,Mid
+21,3,Medium,Low
+22,5,High,Low
+24,2,Low,Low
+26,4,Low,Mid
+27,3,Medium,Low
+28,3,Medium,Low
+29,5,Medium,Mid
+30,2,Low,Low
+32,3,Medium,Low
+33,2,Low,Low
+37,5,High,Low
+38,2,Low,Low
+39,2,Low,Low
+40,5,High,Low
+41,2,Low,Low
+42,2,Low,Low
+43,3,Medium,Low
+44,2,Low,Low
+45,8,Very High,Mid
+46,3,Medium,Low
+47,6,Very High,Low
+48,8,Very High,Mid
+50,6,Very High,Low
+51,4,Medium High,Low
+52,2,Low,Low
+55,2,Low,Low
+56,5,Medium,Mid
+57,8,Very High,Mid
+59,8,Very High,Mid
+61,7,High,Mid
+64,4,Medium High,Low
+69,5,Medium,Mid
+70,3,Medium,Low
+71,5,High,Low
+74,5,Medium,Mid
+75,2,Low,Low
+77,2,Low,Low
+79,8,Very High,Mid
+83,2,Low,Low
+84,3,Medium,Low
+85,2,Low,Low
+87,3,Medium,Low
+89,10,Medium,High
+90,3,Medium,Low
+94,4,Medium High,Low
+95,13,Very High,High
+97,4,Low,Mid
+98,3,Medium,Low
+99,2,Low,Low
+100,8,Very High,Mid
+102,4,Medium High,Low
+103,4,Low,Mid
+104,5,High,Low
+107,2,Low,Low
+108,10,Medium,High
+109,4,Medium High,Low
+112,2,Low,Low
+113,2,Low,Low
+114,10,Medium,High
+115,2,Low,Low
+116,6,Medium High,Mid
+117,6,Medium High,Mid
+118,5,High,Low
+119,3,Medium,Low
+120,4,Medium High,Low
+121,2,Low,Low
+123,5,High,Low
+124,5,High,Low
+125,2,Low,Low
+126,4,Low,Mid
+127,11,Medium High,High
+128,5,Medium,Mid
+130,2,Low,Low
+132,5,Medium,Mid
+133,2,Low,Low
+136,2,Low,Low
+137,7,High,Mid
+138,2,Low,Low
+140,4,Low,Mid
+141,5,High,Low
+143,2,Low,Low
+144,5,Medium,Mid
+145,7,High,Mid
+148,2,Low,Low
+150,3,Medium,Low
+152,7,High,Mid
+153,3,Medium,Low
+154,5,High,Low
+157,3,Medium,Low
+158,4,Medium High,Low
+159,2,Low,Low
+160,5,High,Low
+163,2,Low,Low
+165,4,Medium High,Low
+166,7,High,Mid
+167,4,Low,Mid
+168,2,Low,Low
+170,7,High,Mid
+171,2,Low,Low
+172,2,Low,Low
+173,3,Medium,Low
+174,2,Low,Low
+176,2,Low,Low
+177,2,Low,Low
+179,4,Low,Mid
+182,2,Low,Low
+183,3,Medium,Low
+185,2,Low,Low
+187,2,Low,Low
+188,4,Low,Mid
+192,3,Medium,Low
+193,3,Medium,Low
+194,3,Medium,Low
+195,2,Low,Low
+196,3,Medium,Low
+198,7,High,Mid
+199,7,High,Mid
+200,3,Medium,Low
+201,2,Low,Low
+202,5,High,Low
+204,4,Medium High,Low
+205,2,Low,Low
+207,3,Medium,Low
+208,7,High,Mid
+210,5,High,Low
+217,2,Low,Low
+218,4,Medium High,Low
+219,3,Medium,Low
+220,3,Medium,Low
+221,2,Low,Low
+222,5,Medium,Mid
+223,2,Low,Low
+224,6,Very High,Low
+225,5,Medium,Mid
+229,4,Low,Mid
+231,4,Low,Mid
+232,8,Very High,Mid
+234,2,Low,Low
+236,4,Medium High,Low
+237,2,Low,Low
+238,3,Medium,Low
+240,5,Medium,Mid
+241,5,High,Low
+242,2,Low,Low
+243,13,Very High,High
+244,3,Medium,Low
+246,2,Low,Low
+248,4,Low,Mid
+249,2,Low,Low
+250,2,Low,Low
+251,6,Medium High,Mid
+252,7,High,Mid
+253,8,?,Low
+254,5,High,Low
+255,4,Low,Mid
+256,5,Medium,Mid
+257,2,Low,Low
+259,5,Medium,Mid
+260,5,High,Low
+261,6,Medium High,Mid
+262,6,Medium High,Mid
+263,6,Medium High,Mid
+264,3,Medium,Low
+265,2,Low,Low
+266,2,Low,Low
+267,7,High,Mid
+268,7,High,Mid
+269,2,Low,Low
+270,2,Low,Low
+271,6,Very High,Low
+272,3,Medium,Low
+273,4,Medium High,Low
+276,2,Low,Low
+277,3,Medium,Low
+278,2,Low,Low
+281,4,Medium High,Low
+282,3,Medium,Low
+283,2,Low,Low
+284,4,Low,Mid
+285,7,High,Mid
+287,2,Low,Low
+288,3,Medium,Low
+289,2,Low,Low
+290,2,Low,Low
+292,6,Very High,Low
+293,2,Low,Low
+294,3,Medium,Low
+295,3,Medium,Low
+296,6,Medium High,Mid
+297,4,Low,Mid
+299,3,Medium,Low
+300,3,Medium,Low
+301,8,Very High,Mid
+302,4,Low,Mid
+306,2,Low,Low
+307,2,Low,Low
+313,4,Low,Mid
+315,5,Medium,Mid
+316,5,High,Low
+317,5,Medium,Mid
+318,5,Medium,Mid
+323,5,High,Low
+324,6,Very High,Low
+325,3,Medium,Low
+326,2,Low,Low
+327,4,Medium High,Low
+328,12,High,High
+329,2,Low,Low
+330,4,Medium High,Low
+332,2,Low,Low
+333,5,Medium,Mid
+335,2,Low,Low
+336,4,Medium High,Low
+337,5,High,Low
+338,2,Low,Low
+339,2,Low,Low
+342,3,Medium,Low
+344,3,Medium,Low
+345,2,Low,Low
+347,2,Low,Low
+349,2,Low,Low
+350,3,Medium,Low
+352,4,Low,Mid
+353,4,Medium High,Low
+354,2,Low,Low
+356,2,Low,Low
+359,4,Medium High,Low
+360,4,Low,Mid
+362,4,Low,Mid
+363,2,Low,Low
+364,2,Low,Low
+367,2,Low,Low
+370,3,Medium,Low
+371,10,?,Mid
+372,4,Low,Mid
+373,2,Low,Low
+374,4,Medium High,Low
+375,3,Medium,Low
+378,2,Low,Low
+379,3,Medium,Low
+382,6,Very High,Low
+383,3,Medium,Low
+384,2,Low,Low
+385,5,High,Low
+386,3,Medium,Low
+387,3,Medium,Low
+388,12,High,High
+389,10,Medium,High
+392,7,High,Mid
+393,3,Medium,Low
+394,8,Very High,Mid
+396,6,Medium High,Mid
+397,5,Medium,Mid
+399,5,Medium,Mid
+400,4,Medium High,Low
+401,4,Low,Mid
+402,6,Medium High,Mid
+403,4,Low,Mid
+405,5,High,Low
+406,2,Low,Low
+407,4,Low,Mid
+409,2,Low,Low
+410,3,Medium,Low
+414,2,Low,Low
+416,8,Very High,Mid
+417,2,Low,Low
+418,8,Very High,Mid
+419,3,Medium,Low
+420,7,High,Mid
+422,3,Medium,Low
+425,2,Low,Low
+427,4,Medium High,Low
+428,7,High,Mid
+429,2,Low,Low
+430,4,Low,Mid
+434,2,Low,Low
+437,4,Medium High,Low
+438,2,Low,Low
+439,2,Low,Low
+440,2,Low,Low
+441,9,Low,High
+443,3,Medium,Low
+444,4,Low,Mid
+445,4,Medium High,Low
+447,5,Medium,Mid
+448,5,Medium,Mid
+450,2,Low,Low
+451,5,High,Low
+452,6,Very High,Low
+453,2,Low,Low
+455,2,Low,Low
+456,2,Low,Low
+457,9,Low,High
+458,4,Medium High,Low
+459,2,Low,Low
+460,4,Low,Mid
+461,2,Low,Low
+462,2,Low,Low
+464,2,Low,Low
+465,4,Low,Mid
+467,4,Medium High,Low
+470,2,Low,Low
+471,2,Low,Low
+472,2,Low,Low
+473,3,Medium,Low
+474,4,Medium High,Low
+475,2,Low,Low
+476,2,Low,Low
+477,2,Low,Low
+478,5,High,Low
+479,3,Medium,Low
+481,3,Medium,Low
+482,7,High,Mid
+483,4,Low,Mid
+484,2,Low,Low
+485,13,Very High,High
+486,3,Medium,Low
+487,4,Low,Mid
+488,4,Medium High,Low
+489,3,Medium,Low
+491,4,Medium High,Low
+492,4,Medium High,Low
+493,2,Low,Low
+495,3,Medium,Low
+496,2,Low,Low
+497,5,Medium,Mid
+499,2,Low,Low
+500,4,Low,Mid
+502,3,Medium,Low
+504,2,Low,Low
+508,2,Low,Low
+511,5,High,Low
+512,7,High,Mid
+514,4,Medium High,Low
+516,5,High,Low
+517,2,Low,Low
+518,5,Medium,Mid
+521,2,Low,Low
+523,5,Medium,Mid
+524,3,Medium,Low
+525,6,Very High,Low
+527,9,Low,High
+529,3,Medium,Low
+530,3,Medium,Low
+531,2,Low,Low
+533,2,Low,Low
+534,5,Medium,Mid
+535,4,Medium High,Low
+537,3,Medium,Low
+538,2,Low,Low
+540,2,Low,Low
+542,7,High,Mid
+544,2,Low,Low
+545,2,Low,Low
+546,7,High,Mid
+548,3,Medium,Low
+549,3,Medium,Low
+550,3,Medium,Low
+551,8,Very High,Mid
+552,4,Low,Mid
+554,4,Low,Mid
+555,4,Low,Mid
+556,4,Low,Mid
+558,2,Low,Low
+559,2,Low,Low
+560,6,Very High,Low
+561,4,Low,Mid
+563,6,Medium High,Mid
+564,3,Medium,Low
+565,4,Low,Mid
+566,4,Low,Mid
+567,2,Low,Low
+568,10,Medium,High
+569,4,Medium High,Low
+570,4,Low,Mid
+572,2,Low,Low
+573,5,Medium,Mid
+577,5,Medium,Mid
+579,5,High,Low
+580,7,High,Mid
+581,2,Low,Low
+583,6,Very High,Low
+584,5,Medium,Mid
+585,3,Medium,Low
+586,4,Medium High,Low
+587,2,Low,Low
+588,3,Medium,Low
+589,3,Medium,Low
+592,2,Low,Low
+593,2,Low,Low
+594,4,Medium High,Low
+595,4,Low,Mid
+596,2,Low,Low
+597,2,Low,Low
+598,12,High,High
+599,2,Low,Low
+600,7,High,Mid
+601,2,Low,Low
+602,3,Medium,Low
+605,5,Medium,Mid
+606,6,Medium High,Mid
+609,2,Low,Low
+610,2,Low,Low
+611,2,Low,Low
+612,4,Medium High,Low
+614,2,Low,Low
+615,5,High,Low
+616,3,Medium,Low
+617,5,High,Low
+618,2,Low,Low
+619,3,Medium,Low
+621,5,Medium,Mid
+623,2,Low,Low
+624,4,Medium High,Low
+625,2,Low,Low
+627,12,High,High
+628,8,?,Low
+629,2,Low,Low
+631,2,Low,Low
+635,6,Medium High,Mid
+636,4,Medium High,Low
+638,2,Low,Low
+639,3,Medium,Low
+640,5,Medium,Mid
+641,2,Low,Low
+642,3,Medium,Low
+643,2,Low,Low
+647,10,Medium,High
+649,3,Medium,Low
+650,5,Medium,Mid
+651,4,Low,Mid
+652,4,Medium High,Low
+653,2,Low,Low
+654,3,Medium,Low
+655,2,Low,Low
+659,2,Low,Low
+660,6,Very High,Low
+661,2,Low,Low
+662,4,Low,Mid
+663,3,Medium,Low
+664,5,Medium,Mid
+665,5,Medium,Mid
+666,2,Low,Low
+669,4,Low,Mid
+671,5,Medium,Mid
+672,5,Medium,Mid
+673,2,Low,Low
+674,2,Low,Low
+675,10,?,Mid
+676,3,Medium,Low
+677,8,?,Low
+678,3,Medium,Low
+680,4,Medium High,Low
+681,5,Medium,Mid
+682,7,High,Mid
+683,4,Low,Mid
+684,3,Medium,Low
+686,5,Medium,Mid
+689,6,Very High,Low
+690,6,Very High,Low
+691,3,Medium,Low
+692,2,Low,Low
+693,4,Low,Mid
+694,7,High,Mid
+695,8,Very High,Mid
+696,5,Medium,Mid
+697,2,Low,Low
+698,2,Low,Low
+700,2,Low,Low
+702,4,Medium High,Low
+704,2,Low,Low
+705,4,Medium High,Low
+706,4,Medium High,Low
+707,3,Medium,Low
+708,6,Medium High,Mid
+711,2,Low,Low
+712,4,Medium High,Low
+713,4,Medium High,Low
+714,3,Medium,Low
+715,2,Low,Low
+718,2,Low,Low
+719,2,Low,Low
+720,4,Medium High,Low
+721,4,Low,Mid
+722,3,Medium,Low
+723,6,Very High,Low
+726,2,Low,Low
+727,2,Low,Low
+728,5,Medium,Mid
+729,3,Medium,Low
+730,2,Low,Low
+731,9,Low,High
+732,2,Low,Low
+734,4,Medium High,Low
+736,5,High,Low
+737,4,Medium High,Low
+738,6,Very High,Low
+739,2,Low,Low
+741,4,Medium High,Low
+743,6,Very High,Low
+744,2,Low,Low
+746,4,Low,Mid
+747,3,Medium,Low
+748,3,Medium,Low
+749,4,Medium High,Low
+750,6,Very High,Low
+751,5,Medium,Mid
+752,2,Low,Low
+754,2,Low,Low
+756,4,Medium High,Low
+757,2,Low,Low
+758,3,Medium,Low
+759,7,High,Mid
+761,5,Medium,Mid
+763,4,Low,Mid
+764,10,?,Mid
+766,2,Low,Low
+768,2,Low,Low
+769,4,Low,Mid
+770,5,Medium,Mid
+771,3,Medium,Low
+772,6,Medium High,Mid
+773,13,Very High,High
+775,2,Low,Low
+776,5,Medium,Mid
+777,3,Medium,Low
+778,4,Low,Mid
+779,5,High,Low
+780,2,Low,Low
+781,2,Low,Low
+782,2,Low,Low
+783,2,Low,Low
+785,3,Medium,Low
+786,3,Medium,Low
+787,7,High,Mid
+788,12,High,High
+791,4,Medium High,Low
+792,6,Medium High,Mid
+793,2,Low,Low
+794,4,Low,Mid
+795,3,Medium,Low
+797,2,Low,Low
+798,3,Medium,Low
+800,2,Low,Low
+801,5,High,Low
+803,3,Medium,Low
+804,4,Medium High,Low
+805,4,Medium High,Low
+806,5,High,Low
+807,4,Low,Mid
+808,2,Low,Low
+809,5,High,Low
+811,4,Low,Mid
+812,2,Low,Low
+814,4,Low,Mid
+817,8,Very High,Mid
+818,2,Low,Low
+819,4,Low,Mid
+820,2,Low,Low
+821,2,Low,Low
+822,2,Low,Low
+825,2,Low,Low
+826,3,Medium,Low
+827,2,Low,Low
+828,3,Medium,Low
+829,13,Very High,High
+830,8,Very High,Mid
+831,6,Medium High,Mid
+832,3,Medium,Low
+833,2,Low,Low
+834,3,Medium,Low
+835,2,Low,Low
+838,5,High,Low
+840,6,Very High,Low
+842,2,Low,Low
+843,3,Medium,Low
+844,2,Low,Low
+845,3,Medium,Low
+846,2,Low,Low
+847,3,Medium,Low
+848,2,Low,Low
+849,3,Medium,Low
+850,3,Medium,Low
+851,2,Low,Low
+852,2,Low,Low
+853,3,Medium,Low
+854,3,Medium,Low
+855,2,Low,Low
+856,4,Low,Mid
+857,2,Low,Low
+858,2,Low,Low
+860,11,Medium High,High
+861,2,Low,Low
+862,3,Medium,Low
+863,2,Low,Low
+864,2,Low,Low
+865,2,Low,Low
+866,4,Medium High,Low
+868,4,Low,Mid
+869,8,?,Low
+870,3,Medium,Low
+871,2,Low,Low
+872,2,Low,Low
+874,4,Low,Mid
+875,3,Medium,Low
+876,4,Low,Mid
+877,3,Medium,Low
+878,4,Medium High,Low
+880,4,Medium High,Low
+881,4,Low,Mid
+882,2,Low,Low
+883,7,High,Mid
+884,5,High,Low
+885,2,Low,Low
+886,5,Medium,Mid
+887,2,Low,Low
+888,2,Low,Low
+889,7,High,Mid
+890,5,High,Low
+891,3,Medium,Low
+892,2,Low,Low
+893,6,Very High,Low
+894,8,Very High,Mid
+895,4,Medium High,Low
+896,5,Medium,Mid
+897,6,Very High,Low
+898,4,Low,Mid
+899,5,High,Low
+900,6,Very High,Low
+901,2,Low,Low
+903,2,Low,Low
+905,4,Medium High,Low
+906,3,Medium,Low
+907,3,Medium,Low
+908,6,Medium High,Mid
+909,3,Medium,Low
+910,2,Low,Low
+911,2,Low,Low
+912,3,Medium,Low
+913,2,Low,Low
+914,2,Low,Low
+916,3,Medium,Low
+917,4,Medium High,Low
+918,2,Low,Low
+919,2,Low,Low
+920,2,Low,Low
+921,2,Low,Low
+923,3,Medium,Low
+924,3,Medium,Low
+927,3,Medium,Low
+928,2,Low,Low
+929,2,Low,Low
+930,6,Very High,Low
+931,3,Medium,Low
+932,2,Low,Low
+933,6,Medium High,Mid
+935,2,Low,Low
+936,2,Low,Low
+937,4,Medium High,Low
+938,4,Medium High,Low
+941,2,Low,Low
+942,4,Low,Mid
+943,5,Medium,Mid
+945,4,Medium High,Low
+946,2,Low,Low
+947,2,Low,Low
+948,9,Low,High
+949,2,Low,Low
+950,2,Low,Low
+953,2,Low,Low
+954,4,Medium High,Low
+955,5,Medium,Mid
+956,2,Low,Low
+957,2,Low,Low
+958,12,High,High
+959,6,Medium High,Mid
+960,10,?,Mid
+961,3,Medium,Low
+962,2,Low,Low
+963,3,Medium,Low
+965,3,Medium,Low
+968,5,High,Low
+969,2,Low,Low
+970,3,Medium,Low
+971,4,Medium High,Low
+972,5,Medium,Mid
+973,5,High,Low
+974,2,Low,Low
+975,3,Medium,Low
+976,2,Low,Low
+977,2,Low,Low
+980,3,Medium,Low
+981,6,Medium High,Mid
+982,2,Low,Low
+983,4,Medium High,Low
+985,5,High,Low
+986,3,Medium,Low
+987,2,Low,Low
+988,4,Medium High,Low
+990,2,Low,Low
+991,3,Medium,Low
+992,4,Medium High,Low
+993,6,Very High,Low
+994,4,Low,Mid
+995,6,Very High,Low
+996,3,Medium,Low
+997,2,Low,Low
+999,13,Very High,High
+1001,2,Low,Low
+1003,5,Medium,Mid
+1004,7,High,Mid
+1005,2,Low,Low
+1006,5,High,Low
+1008,5,High,Low
+1010,3,Medium,Low
+1011,2,Low,Low
+1012,5,High,Low
+1013,3,Medium,Low
+1014,5,High,Low
+1015,5,Medium,Mid
+1016,2,Low,Low
+1017,4,Medium High,Low
+1018,4,Low,Mid
+1019,5,Medium,Mid
+1020,3,Medium,Low
+1021,2,Low,Low
+1022,5,Medium,Mid
+1023,2,Low,Low
+1024,4,Medium High,Low
+1026,3,Medium,Low
+1028,2,Low,Low
+1029,5,High,Low
+1032,2,Low,Low
+1034,3,Medium,Low
+1035,3,Medium,Low
+1036,2,Low,Low
+1037,5,Medium,Mid
+1039,4,Medium High,Low
+1040,3,Medium,Low
+1041,2,Low,Low
+1046,10,Medium,High
+1047,4,Low,Mid
+1050,6,Medium High,Mid
+1053,2,Low,Low
+1055,5,High,Low
+1056,2,Low,Low
+1057,4,Medium High,Low
+1059,4,Low,Mid
+1062,2,Low,Low
+1065,2,Low,Low
+1066,3,Medium,Low
+1067,6,Very High,Low
+1068,4,Low,Mid
+1069,3,Medium,Low
+1070,6,Medium High,Mid
+1071,2,Low,Low
+1073,4,Medium High,Low
+1074,2,Low,Low
+1075,2,Low,Low
+1077,3,Medium,Low
+1078,5,Medium,Mid
+1079,3,Medium,Low
+1080,3,Medium,Low
+1081,4,Low,Mid
+1082,3,Medium,Low
+1083,6,Medium High,Mid
+1084,3,Medium,Low
+1085,8,Very High,Mid
+1086,4,Low,Mid
+1087,3,Medium,Low
+1088,3,Medium,Low
+1089,2,Low,Low
+1090,5,High,Low
+1091,4,Low,Mid
+1092,4,Low,Mid
+1094,2,Low,Low
+1095,2,Low,Low
+1097,5,High,Low
+1098,2,Low,Low
+1099,2,Low,Low
+1100,3,Medium,Low
+1102,6,Very High,Low
+1103,6,Medium High,Mid
+1104,2,Low,Low
+1105,5,High,Low
+1106,2,Low,Low
+1107,3,Medium,Low
+1108,2,Low,Low
+1111,5,High,Low
+1113,5,Medium,Mid
+1114,4,Low,Mid
+1116,3,Medium,Low
+1117,2,Low,Low
+1118,2,Low,Low
+1120,7,High,Mid
+1121,4,Medium High,Low
+1122,4,Medium High,Low
+1123,4,Medium High,Low
+1124,2,Low,Low
+1125,2,Low,Low
+1126,3,Medium,Low
+1127,6,Medium High,Mid
+1130,2,Low,Low
+1131,4,Medium High,Low
+1132,2,Low,Low
+1133,2,Low,Low
+1134,2,Low,Low
+1135,5,Medium,Mid
+1136,4,Low,Mid
+1137,3,Medium,Low
+1138,2,Low,Low
+1139,2,Low,Low
+1140,7,High,Mid
+1141,5,Medium,Mid
+1142,2,Low,Low
+1143,5,High,Low
+1144,2,Low,Low
+1145,13,Very High,High
+1146,2,Low,Low
+1147,3,Medium,Low
+1148,2,Low,Low
+1150,5,High,Low
+1151,5,Medium,Mid
+1152,4,Medium High,Low
+1154,3,Medium,Low
+1155,2,Low,Low
+1156,5,Medium,Mid
+1158,4,Medium High,Low
+1159,2,Low,Low
+1160,5,Medium,Mid
+1163,3,Medium,Low
+1164,2,Low,Low
+1165,2,Low,Low
+1166,7,High,Mid
+1167,2,Low,Low
+1168,2,Low,Low
+1170,9,Low,High
+1172,2,Low,Low
+1173,5,Medium,Mid
+1174,10,?,Mid
+1175,5,High,Low
+1177,5,Medium,Mid
+1178,2,Low,Low
+1179,5,High,Low
+1180,2,Low,Low
+1181,6,Medium High,Mid
+1182,5,High,Low
+1184,3,Medium,Low
+1186,3,Medium,Low
+1187,3,Medium,Low
+1188,3,Medium,Low
+1189,2,Low,Low
+1191,5,High,Low
+1192,3,Medium,Low
+1193,5,Medium,Mid
+1194,5,High,Low
+1195,2,Low,Low
+1197,2,Low,Low
+1198,3,Medium,Low
+1199,2,Low,Low
+1200,2,Low,Low
+1201,2,Low,Low
+1202,8,?,Low
+1203,2,Low,Low
+1205,2,Low,Low
+1206,2,Low,Low
+1207,2,Low,Low
+1210,3,Medium,Low
+1211,2,Low,Low
+1212,2,Low,Low
+1213,5,High,Low
+1214,2,Low,Low
+1215,5,High,Low
+1216,3,Medium,Low
+1217,2,Low,Low
+1218,5,High,Low
+1219,3,Medium,Low
+1220,5,High,Low
+1221,2,Low,Low
+1222,3,Medium,Low
+1223,8,Very High,Mid
+1224,2,Low,Low
+1225,2,Low,Low
+1226,3,Medium,Low
+1227,5,Medium,Mid
+1228,2,Low,Low
+1229,2,Low,Low
+1230,2,Low,Low
+1231,4,Medium High,Low
+1232,2,Low,Low
+1233,7,High,Mid
+1235,2,Low,Low
+1237,3,Medium,Low
+1238,2,Low,Low
+1239,6,Medium High,Mid
+1240,2,Low,Low
+1241,2,Low,Low
+1242,2,Low,Low
+1243,3,Medium,Low
+1244,2,Low,Low
+1245,4,Low,Mid
+1247,2,Low,Low
+1248,2,Low,Low
+1249,5,Medium,Mid
+1250,5,Medium,Mid
+1251,4,Medium High,Low
+1253,4,Low,Mid
+1254,2,Low,Low
+1255,3,Medium,Low
+1256,5,High,Low
+1257,2,Low,Low
+1258,10,Medium,High
+1259,7,High,Mid
+1260,2,Low,Low
+1261,3,Medium,Low
+1262,5,Medium,Mid
+1263,15,?,High
+1265,3,Medium,Low
+1266,4,Low,Mid
+1267,8,Very High,Mid
+1268,2,Low,Low
+1270,2,Low,Low
+1271,2,Low,Low
+1273,2,Low,Low
+1274,5,High,Low
+1277,3,Medium,Low
+1279,2,Low,Low
+1280,2,Low,Low
+1282,5,Medium,Mid
+1283,5,High,Low
+1284,2,Low,Low
+1285,2,Low,Low
+1286,2,Low,Low
+1287,2,Low,Low
+1288,3,Medium,Low
+1291,2,Low,Low
+1292,3,Medium,Low
+1293,4,Low,Mid
+1296,6,Very High,Low
+1297,2,Low,Low
+1299,8,Very High,Mid
+1300,3,Medium,Low
+1301,3,Medium,Low
+1302,2,Low,Low
+1303,2,Low,Low
+1304,5,Medium,Mid
+1305,12,High,High
+1306,3,Medium,Low
+1307,2,Low,Low
+1308,2,Low,Low
+1309,4,Medium High,Low
+1310,2,Low,Low
+1311,3,Medium,Low
+1312,5,High,Low
+1314,3,Medium,Low
+1315,3,Medium,Low
+1316,5,Medium,Mid
+1318,5,Medium,Mid
+1319,7,High,Mid
+1321,3,Medium,Low
+1322,2,Low,Low
+1323,2,Low,Low
+1324,4,Medium High,Low
+1326,5,Medium,Mid
+1327,2,Low,Low
+1328,3,Medium,Low
+1329,5,Medium,Mid
+1330,5,High,Low
+1331,2,Low,Low
+1332,2,Low,Low
+1333,2,Low,Low
+1335,4,Low,Mid
+1336,7,High,Mid
+1337,5,Medium,Mid
+1338,2,Low,Low
+1339,5,High,Low
+1341,2,Low,Low
+1342,2,Low,Low
+1343,2,Low,Low
+1344,3,Medium,Low
+1345,2,Low,Low
+1346,2,Low,Low
+1348,2,Low,Low
+1349,3,Medium,Low
+1351,2,Low,Low
+1352,2,Low,Low
+1353,3,Medium,Low
+1354,2,Low,Low
+1356,7,High,Mid
+1357,2,Low,Low
+1358,2,Low,Low
+1359,7,High,Mid
+1361,3,Medium,Low
+1362,2,Low,Low
+1363,3,Medium,Low
+1364,2,Low,Low
+1366,2,Low,Low
+1368,6,Medium High,Mid
+1370,2,Low,Low
+1371,6,Medium High,Mid
+1373,4,Medium High,Low
+1376,5,High,Low
+1377,3,Medium,Low
+1378,2,Low,Low
+1379,3,Medium,Low
+1381,3,Medium,Low
+1383,3,Medium,Low
+1384,4,Low,Mid
+1385,2,Low,Low
+1386,2,Low,Low
+1387,4,Medium High,Low
+1388,2,Low,Low
+1389,5,High,Low
+1390,2,Low,Low
+1391,4,Medium High,Low
+1392,3,Medium,Low
+1393,2,Low,Low
+1394,2,Low,Low
+1395,2,Low,Low
+1396,2,Low,Low
+1397,6,Medium High,Mid
+1398,4,Low,Mid
+1399,3,Medium,Low
+1401,6,Very High,Low
+1403,5,Medium,Mid
+1404,3,Medium,Low
+1405,4,Medium High,Low
+1406,5,High,Low
+1407,2,Low,Low
+1409,13,Very High,High
+1410,2,Low,Low
+1411,2,Low,Low
+1412,4,Low,Mid
+1413,2,Low,Low
+1414,4,Low,Mid
+1415,2,Low,Low
+1417,5,Medium,Mid
+1418,2,Low,Low
+1419,4,Medium High,Low
+1420,3,Medium,Low
+1421,2,Low,Low
+1423,2,Low,Low
+1424,2,Low,Low
+1425,2,Low,Low
+1426,4,Medium High,Low
+1427,3,Medium,Low
+1428,15,?,High
+1429,3,Medium,Low
+1430,2,Low,Low
+1432,5,High,Low
+1433,5,High,Low
+1434,13,Very High,High
+1436,2,Low,Low
+1438,2,Low,Low
+1439,6,Medium High,Mid
+1440,5,Medium,Mid
+1442,3,Medium,Low
+1443,4,Low,Mid
+1444,3,Medium,Low
+1445,3,Medium,Low
+1446,2,Low,Low
+1447,5,Medium,Mid
+1448,3,Medium,Low
+1449,2,Low,Low
+1451,5,Medium,Mid
+1452,4,Medium High,Low
+1453,4,Low,Mid
+1454,2,Low,Low
+1457,5,High,Low
+1458,3,Medium,Low
+1459,2,Low,Low
+1460,2,Low,Low
+1461,2,Low,Low
+1462,5,High,Low
+1464,8,Very High,Mid
+1465,2,Low,Low
+1466,2,Low,Low
+1467,5,Medium,Mid
+1469,2,Low,Low
+1470,3,Medium,Low
+1471,2,Low,Low
+1472,2,Low,Low
+1474,2,Low,Low
+1475,4,Medium High,Low
+1476,4,Low,Mid
+1477,4,Low,Mid
+1478,2,Low,Low
+1479,3,Medium,Low
+1481,2,Low,Low
+1482,2,Low,Low
+1483,4,Low,Mid
+1484,2,Low,Low
+1485,4,Medium High,Low
+1487,2,Low,Low
+1488,3,Medium,Low
+1490,3,Medium,Low
+1491,6,Very High,Low
+1492,2,Low,Low
+1493,5,High,Low
+1494,3,Medium,Low
+1495,2,Low,Low
+1497,2,Low,Low
+1498,3,Medium,Low
+1499,2,Low,Low
+1500,5,High,Low
+1501,2,Low,Low
+1502,4,Low,Mid
+1503,5,High,Low
+1504,6,Medium High,Mid
+1505,6,Very High,Low
+1506,10,Medium,High
+1507,2,Low,Low
+1508,4,Low,Mid
+1509,13,Very High,High
+1510,6,Medium High,Mid
+1512,5,High,Low
+1513,4,Low,Mid
+1515,4,Low,Mid
+1516,3,Medium,Low
+1517,3,Medium,Low
+1518,4,Low,Mid
+1521,2,Low,Low
+1522,2,Low,Low
+1523,11,Medium High,High
+1526,2,Low,Low
+1527,2,Low,Low
+1528,3,Medium,Low
+1529,4,Medium High,Low
+1530,3,Medium,Low
+1531,2,Low,Low
+1532,7,High,Mid
+1533,3,Medium,Low
+1534,3,Medium,Low
+1536,2,Low,Low
+1537,2,Low,Low
+1539,2,Low,Low
+1540,2,Low,Low
+1543,5,Medium,Mid
+1544,2,Low,Low
+1545,8,Very High,Mid
+1546,5,High,Low
+1547,4,Medium High,Low
+1548,10,Medium,High
+1549,2,Low,Low
+1550,3,Medium,Low
+1551,2,Low,Low
+1552,3,Medium,Low
+1553,2,Low,Low
+1554,5,High,Low
+1555,2,Low,Low
+1556,2,Low,Low
+1557,4,Medium High,Low
+1558,2,Low,Low
+1559,4,Low,Mid
+1560,5,High,Low
+1561,2,Low,Low
+1562,12,High,High
+1563,3,Medium,Low
+1564,3,Medium,Low
+1565,2,Low,Low
+1566,3,Medium,Low
+1567,3,Medium,Low
+1568,4,Low,Mid
+1569,11,Medium High,High
+1570,3,Medium,Low
+1571,3,Medium,Low
+1572,2,Low,Low
+1573,2,Low,Low
+1574,3,Medium,Low
+1575,6,Medium High,Mid
+1576,5,Medium,Mid
+1577,4,Low,Mid
+1578,5,Medium,Mid
+1579,4,Low,Mid
+1580,2,Low,Low
+1581,3,Medium,Low
+1582,2,Low,Low
+1583,8,Very High,Mid
+1584,2,Low,Low
+1585,2,Low,Low
+1586,3,Medium,Low
+1587,2,Low,Low
+1588,2,Low,Low
+1589,10,Medium,High
+1591,3,Medium,Low
+1592,3,Medium,Low
+1593,3,Medium,Low
+1595,3,Medium,Low
+1596,7,High,Mid
+1597,5,Medium,Mid
+1598,4,Medium High,Low
+1600,2,Low,Low
+1601,2,Low,Low
+1602,6,Medium High,Mid
+1603,5,Medium,Mid
+1605,2,Low,Low
+1606,3,Medium,Low
+1607,2,Low,Low
+1608,6,Very High,Low
+1609,6,Medium High,Mid
+1610,5,Medium,Mid
+1611,3,Medium,Low
+1612,2,Low,Low
+1613,2,Low,Low
+1614,4,Medium High,Low
+1615,6,Very High,Low
+1617,2,Low,Low
+1618,5,High,Low
+1623,3,Medium,Low
+1625,3,Medium,Low
+1627,2,Low,Low
+1628,2,Low,Low
+1629,2,Low,Low
+1630,2,Low,Low
+1632,6,Medium High,Mid
+1633,4,Medium High,Low
+1635,6,Medium High,Mid
+1637,2,Low,Low
+1638,2,Low,Low
+1639,4,Low,Mid
+1640,3,Medium,Low
+1641,2,Low,Low
+1642,5,High,Low
+1643,3,Medium,Low
+1644,7,High,Mid
+1646,3,Medium,Low
+1648,2,Low,Low
+1649,2,Low,Low
+1650,4,Low,Mid
+1651,6,Medium High,Mid
+1652,3,Medium,Low
+1654,3,Medium,Low
+1655,8,Very High,Mid
+1656,2,Low,Low
+1657,2,Low,Low
+1658,5,High,Low
+1659,3,Medium,Low
+1660,4,Medium High,Low
+1662,3,Medium,Low
+1663,2,Low,Low
+1665,3,Medium,Low
+1666,5,Medium,Mid
+1667,4,Low,Mid
+1668,3,Medium,Low
+1670,7,High,Mid
+1672,3,Medium,Low
+1674,4,Low,Mid
+1675,9,Low,High
+1676,4,Low,Mid
+1679,6,Very High,Low
+1680,6,Very High,Low
+1681,2,Low,Low
+1682,2,Low,Low
+1685,2,Low,Low
+1687,2,Low,Low
+1688,3,Medium,Low
+1689,2,Low,Low
+1690,3,Medium,Low
+1691,4,Medium High,Low
+1692,2,Low,Low
+1693,2,Low,Low
+1694,7,High,Mid
+1695,2,Low,Low
+1697,4,Medium High,Low
+1698,6,Very High,Low
+1701,4,Low,Mid
+1702,6,Medium High,Mid
+1703,2,Low,Low
+1704,3,Medium,Low
+1706,2,Low,Low
+1707,2,Low,Low
+1708,2,Low,Low
+1710,2,Low,Low
+1712,3,Medium,Low
+1713,13,Very High,High
+1714,5,Medium,Mid
+1715,3,Medium,Low
+1716,4,Low,Mid
+1717,10,Medium,High
+1718,2,Low,Low
+1719,2,Low,Low
+1720,2,Low,Low
+1721,3,Medium,Low
+1722,10,Medium,High
+1723,5,High,Low
+1724,4,Low,Mid
+1725,2,Low,Low
+1727,13,Very High,High
+1728,2,Low,Low
+1731,3,Medium,Low
+1732,8,Very High,Mid
+1733,3,Medium,Low
+1734,2,Low,Low
+1738,5,Medium,Mid
+1739,3,Medium,Low
+1740,5,Medium,Mid
+1741,2,Low,Low
+1742,2,Low,Low
+1743,2,Low,Low
+1744,2,Low,Low
+1745,3,Medium,Low
+1746,2,Low,Low
+1747,4,Low,Mid
+1748,5,Medium,Mid
+1749,2,Low,Low
+1750,5,High,Low
+1751,2,Low,Low
+1752,2,Low,Low
+1754,3,Medium,Low
+1757,4,Medium High,Low
+1758,6,Medium High,Mid
+1759,2,Low,Low
+1760,2,Low,Low
+1761,2,Low,Low
+1762,5,High,Low
+1763,6,Medium High,Mid
+1764,2,Low,Low
+1766,3,Medium,Low
+1767,2,Low,Low
+1768,7,High,Mid
+1769,4,Medium High,Low
+1770,7,High,Mid
+1771,4,Low,Mid
+1772,6,Very High,Low
+1774,2,Low,Low
+1775,3,Medium,Low
+1776,3,Medium,Low
+1777,2,Low,Low
+1779,5,Medium,Mid
+1780,2,Low,Low
+1781,3,Medium,Low
+1782,2,Low,Low
+1783,2,Low,Low
+1784,4,Low,Mid
+1785,3,Medium,Low
+1788,2,Low,Low
+1790,9,Low,High
+1791,3,Medium,Low
+1792,3,Medium,Low
+1794,2,Low,Low
+1795,5,Medium,Mid
+1796,3,Medium,Low
+1797,2,Low,Low
+1799,6,Medium High,Mid
+1800,2,Low,Low
+1804,2,Low,Low
+1807,3,Medium,Low
+1809,4,Low,Mid
+1810,2,Low,Low
+1811,2,Low,Low
+1813,3,Medium,Low
+1814,2,Low,Low
+1815,9,Low,High
+1816,4,Low,Mid
+1817,2,Low,Low
+1819,2,Low,Low
+1820,6,Very High,Low
+1821,5,High,Low
+1825,2,Low,Low
+1827,4,Low,Mid
+1828,2,Low,Low
+1830,2,Low,Low
+1831,2,Low,Low
+1834,2,Low,Low
+1835,3,Medium,Low
+1838,2,Low,Low
+1839,2,Low,Low
+1840,2,Low,Low
+1841,2,Low,Low
+1842,2,Low,Low
+1843,2,Low,Low
+1846,2,Low,Low
+1847,2,Low,Low
+1848,3,Medium,Low
+1849,2,Low,Low
+1850,5,Medium,Mid
+1854,3,Medium,Low
+1855,3,Medium,Low
+1856,3,Medium,Low
+1857,2,Low,Low
+1859,2,Low,Low
+1861,3,Medium,Low
+1862,2,Low,Low
+1863,2,Low,Low
+1864,2,Low,Low
+1865,2,Low,Low
+1866,2,Low,Low
+1867,4,Low,Mid
+1868,2,Low,Low
+1869,7,High,Mid
+1871,2,Low,Low
+1872,7,High,Mid
+1873,2,Low,Low
+1874,3,Medium,Low
+1875,2,Low,Low
+1876,5,High,Low
+1878,3,Medium,Low
+1879,4,Medium High,Low
+1880,2,Low,Low
+1882,3,Medium,Low
+1884,3,Medium,Low
+1887,4,Medium High,Low
+1889,4,Medium High,Low
+1890,3,Medium,Low
+1893,3,Medium,Low
+1896,3,Medium,Low
+1901,2,Low,Low
+1902,9,Low,High
+1903,12,High,High
+1906,2,Low,Low
+1907,4,Low,Mid
+1908,7,High,Mid
+1909,4,Low,Mid
+1910,7,High,Mid
+1911,2,Low,Low
+1912,5,High,Low
+1913,2,Low,Low
+1915,2,Low,Low
+1917,2,Low,Low
+1918,2,Low,Low
+1919,4,Medium High,Low
+1920,8,Very High,Mid
+1922,3,Medium,Low
+1923,7,High,Mid
+1924,2,Low,Low
+1926,3,Medium,Low
+1927,2,Low,Low
+1929,12,High,High
+1930,6,Medium High,Mid
+1931,12,High,High
+1933,3,Medium,Low
+1936,2,Low,Low
+1937,2,Low,Low
+1938,7,High,Mid
+1942,3,Medium,Low
+1943,2,Low,Low
+1944,2,Low,Low
+1945,12,High,High
+1947,2,Low,Low
+1948,3,Medium,Low
+1953,5,Medium,Mid
+1955,3,Medium,Low
+1956,5,Medium,Mid
+1957,2,Low,Low
+1960,2,Low,Low
+1962,2,Low,Low
+1963,10,Medium,High
+1964,4,Medium High,Low
+1966,4,Medium High,Low
+1967,2,Low,Low
+1968,2,Low,Low
+1971,6,Medium High,Mid
+1974,3,Medium,Low
+1975,2,Low,Low
+1976,2,Low,Low
+1979,2,Low,Low
+1981,2,Low,Low
+1982,7,High,Mid
+1983,4,Medium High,Low
+1984,2,Low,Low
+1985,3,Medium,Low
+1986,2,Low,Low
+1988,4,Low,Mid
+1993,3,Medium,Low
+1995,5,Medium,Mid
+1997,2,Low,Low
+1999,5,Medium,Mid
+2000,2,Low,Low
+2002,2,Low,Low
+2004,5,High,Low
+2005,5,High,Low
+2006,2,Low,Low
+2007,5,Medium,Mid
+2008,5,High,Low
+2009,2,Low,Low
+2010,3,Medium,Low
+2013,2,Low,Low
+2016,5,Medium,Mid
+2017,3,Medium,Low
+2018,4,Medium High,Low
+2020,3,Medium,Low
+2021,3,Medium,Low
+2022,3,Medium,Low
+2025,5,Medium,Mid
+2027,3,Medium,Low
+2030,4,Medium High,Low
+2033,2,Low,Low
+2034,4,Low,Mid
+2035,2,Low,Low
+2036,3,Medium,Low
+2037,2,Low,Low
+2038,2,Low,Low
+2039,3,Medium,Low
+2041,1,,Low
+2042,3,Medium,Low
+2045,5,Medium,Mid
+2048,6,Very High,Low
+2049,4,Medium High,Low
+2050,3,Medium,Low
+2054,5,High,Low
+2058,2,Low,Low
+2059,4,Medium High,Low
+2063,8,Very High,Mid
+2064,5,High,Low
+2068,2,Low,Low
+2069,2,Low,Low
+2071,4,Medium High,Low
+2074,3,Medium,Low
+2076,6,Medium High,Mid
+2077,5,High,Low
+2080,5,Medium,Mid
+2081,1,,Low
+2082,4,Low,Mid
+2083,7,High,Mid
+2084,2,Low,Low
+2086,4,Low,Mid
+2087,2,Low,Low
+2088,5,High,Low
+2089,6,Medium High,Mid
+2090,4,Medium High,Low
+2091,4,Medium High,Low
+2092,3,Medium,Low
+2093,5,Medium,Mid
+2096,4,Medium High,Low
+2097,2,Low,Low
+2102,2,Low,Low
+2103,7,High,Mid
+2104,2,Low,Low
+2105,4,Medium High,Low
+2106,3,Medium,Low
+2107,3,Medium,Low
+2108,3,Medium,Low
+2111,13,Very High,High
+2115,2,Low,Low
+2116,3,Medium,Low
+2118,2,Low,Low
+2120,4,Medium High,Low
+2122,4,Medium High,Low
+2125,6,Medium High,Mid
+2126,11,Medium High,High
+2131,5,High,Low
+2136,5,Medium,Mid
+2138,3,Medium,Low
+2145,6,Medium High,Mid
+2147,2,Low,Low
+2148,3,Medium,Low
+2149,2,Low,Low
+2152,15,?,High
+2155,2,Low,Low
+2156,3,Medium,Low
+2157,5,Medium,Mid
+2158,2,Low,Low
+2160,2,Low,Low
+2161,13,Very High,High
+2163,2,Low,Low
+2165,3,Medium,Low
+2168,4,Low,Mid
+2176,4,Medium High,Low
+2178,3,Medium,Low
+2180,4,Medium High,Low
+2182,8,Very High,Mid
+2183,5,Medium,Mid
+2187,5,Medium,Mid
+2195,5,Medium,Mid
+2198,6,Medium High,Mid
+2199,5,High,Low
+2202,8,Very High,Mid
+2203,7,High,Mid
+2207,2,Low,Low
+2208,2,Low,Low
+2213,3,Medium,Low
+2216,3,Medium,Low
+2217,2,Low,Low
+2220,7,High,Mid
+2222,11,Medium High,High
+2223,2,Low,Low
+2224,7,High,Mid
+2225,2,Low,Low
+2226,2,Low,Low
+2227,2,Low,Low
+2228,9,Low,High
+2229,2,Low,Low
+2230,8,Very High,Mid
+2231,2,Low,Low
+2232,2,Low,Low
+2234,8,?,Low
+2235,3,Medium,Low
+2237,3,Medium,Low
+2239,2,Low,Low
+2240,3,Medium,Low
+2242,5,Medium,Mid
+2243,2,Low,Low
+2244,2,Low,Low
+2247,2,Low,Low
+2248,4,Medium High,Low
+2249,13,Very High,High
+2250,4,Medium High,Low
+2251,2,Low,Low
+2252,4,Medium High,Low
+2254,7,High,Mid
+2255,8,Very High,Mid
+2257,2,Low,Low
+2258,6,Medium High,Mid
+2263,15,?,High
+2264,4,Medium High,Low
+2265,2,Low,Low
+2271,15,?,High
+2275,2,Low,Low
+2277,6,Medium High,Mid
+2278,3,Medium,Low
+2280,4,Low,Mid
+2281,4,Medium High,Low
+2282,2,Low,Low
+2284,7,High,Mid
+2285,3,Medium,Low
+2286,5,High,Low
+2287,2,Low,Low
+2289,5,High,Low
+2290,2,Low,Low
+2292,2,Low,Low
+2296,3,Medium,Low
+2298,2,Low,Low
+2299,7,High,Mid
+2300,2,Low,Low
+2302,6,Medium High,Mid
+2308,2,Low,Low
+2309,5,High,Low
+2311,5,Medium,Mid
+2314,2,Low,Low
+2318,2,Low,Low
+2319,2,Low,Low
+2320,2,Low,Low
+2322,3,Medium,Low
+2324,2,Low,Low
+2325,3,Medium,Low
+2326,7,High,Mid
+2329,2,Low,Low
+2330,3,Medium,Low
+2331,5,High,Low
+2332,4,Medium High,Low
+2333,4,Low,Mid
+2334,5,Medium,Mid
+2335,3,Medium,Low
+2337,4,Medium High,Low
+2341,2,Low,Low
+2343,3,Medium,Low
+2344,3,Medium,Low
+2345,4,Medium High,Low
+2346,7,High,Mid
+2347,3,Medium,Low
+2350,15,,High
+2353,3,Medium,Low
+2354,15,,High
+2358,9,Low,High
+2359,5,Medium,Mid
+2366,2,Low,Low
+2367,6,Very High,Low
+2368,15,,High
+2371,7,High,Mid
+2372,2,Low,Low
+2375,2,Low,Low
+2378,1,,Low
+2386,1,,Low
+2392,3,Medium,Low
+2394,2,Low,Low
+2395,2,Low,Low
+2397,1,,Low
+2399,1,,Low
+2404,5,Medium,Mid
+2407,4,Low,Mid
+2408,1,,Low
+2409,5,Medium,Mid
+2413,2,Low,Low
+2415,7,High,Mid
+2417,2,Low,Low
+2420,3,Medium,Low
+2424,2,Low,Low
+2426,9,Low,High
+2428,3,Medium,Low
+2431,3,Medium,Low
+2433,2,Low,Low
+2435,1,,Low
+2436,5,Medium,Mid
+2441,1,,Low
+2442,10,Medium,High
+2452,3,Medium,Low
+2460,2,Low,Low
+2461,4,Low,Mid
+2463,6,Medium High,Mid
+2465,1,,Low
+2468,1,,Low
+2476,1,,Low
+2484,2,Low,Low
+2495,3,Medium,Low
+2498,1,,Low
+2502,4,Low,Mid
+2504,5,Medium,Mid
+2507,2,Low,Low
+2509,2,Low,Low
+2512,2,Low,Low
+2514,2,Low,Low
+2517,1,,Low
+2519,2,Low,Low
+2520,6,Medium High,Mid
+2521,6,Very High,Low
+2523,5,Medium,Mid
+2546,2,Low,Low
+2547,8,Very High,Mid
+2548,4,Low,Mid
+2552,6,Very High,Low
+2557,2,Low,Low
+2558,3,Medium,Low
+2560,1,,Low
+2563,4,Low,Mid
+2572,2,Low,Low
+2587,4,Low,Mid
+2588,2,Low,Low
+2590,2,Low,Low
+2591,2,Low,Low
+2594,1,,Low
+2598,1,,Low
+2599,2,Low,Low
+2600,2,Low,Low
+2602,4,Medium High,Low
+2605,6,Very High,Low
+2607,5,Medium,Mid
+2609,3,Medium,Low
+2610,1,,Low
+2611,1,,Low
+2613,1,,Low
+2615,4,Low,Mid
+2616,3,Medium,Low
+2617,2,Low,Low
+2618,1,,Low
+2620,2,Low,Low
+2621,1,,Low
+2622,7,High,Mid
+2623,1,,Low
+2624,1,,Low
+2626,8,Very High,Mid
+2627,1,,Low
+2631,5,Medium,Mid
+2633,4,Low,Mid
+2638,1,,Low
+2639,1,,Low
+2641,3,Medium,Low
+2642,1,,Low
+2646,12,High,High
+2647,1,,Low
+2648,4,Low,Mid
+2649,2,Low,Low
+2650,1,,Low
+2651,2,Low,Low
+2653,9,Low,High
+2655,8,Very High,Mid
+2657,1,,Low
+2660,2,Low,Low
+2661,2,Low,Low
+2662,1,,Low
+2663,4,Low,Mid
+2667,1,,Low
+2668,1,,Low
+2669,1,,Low
+2673,2,Low,Low
+2674,2,Low,Low
+2675,2,Low,Low
+2676,3,Medium,Low
+2677,5,Medium,Mid
+2678,2,Low,Low
+2679,2,Low,Low
+2683,2,Low,Low
+2684,1,,Low
+2685,2,Low,Low
+2686,5,High,Low
+2687,5,High,Low
+2690,4,Medium High,Low
+2692,3,Medium,Low
+2694,2,Low,Low
+2700,2,Low,Low
+2714,7,High,Mid
+2717,4,Medium High,Low
+2722,1,,Low
+2724,2,Low,Low
+2725,7,High,Mid
+2729,8,Very High,Mid
+2733,3,Medium,Low
+2735,4,Medium High,Low
+2737,1,,Low
+2738,3,Medium,Low
+2740,1,,Low
+2743,2,Low,Low
+2744,5,Medium,Mid
+2748,2,Low,Low
+2750,1,,Low
+2751,5,High,Low
+2752,1,,Low
+2754,3,Medium,Low
+2757,5,Medium,Mid
+2758,4,Medium High,Low
+2761,4,Low,Mid
+2764,4,Medium High,Low
+2767,4,Low,Mid
+2768,1,,Low
+2769,2,Low,Low
+2770,2,Low,Low
+2771,1,,Low
+2774,3,Medium,Low
+2776,7,High,Mid
+2777,2,Low,Low
+2778,4,Low,Mid
+2779,5,High,Low
+2780,1,,Low
+2781,5,Medium,Mid
+2783,6,Very High,Low
+2784,3,Medium,Low
+2785,2,Low,Low
+2788,1,,Low
+2789,1,,Low
+2792,5,High,Low
+2796,5,High,Low
+2797,1,,Low
+2798,2,Low,Low
+2799,1,,Low
+2807,2,Low,Low
+2808,2,Low,Low
+2809,8,Very High,Mid
+2810,2,Low,Low
+2812,3,Medium,Low
+2813,2,Low,Low
+2824,3,Medium,Low
+2826,6,Medium High,Mid
+2829,2,Low,Low
+2830,4,Medium High,Low
+2831,1,,Low
+2832,5,Medium,Mid
+2833,2,Low,Low
+2834,1,,Low
+2835,2,Low,Low
+2836,6,Medium High,Mid
+2842,13,Very High,High
+2849,6,Medium High,Mid
+2852,2,Low,Low
+2853,1,,Low
+2856,3,Medium,Low
+2860,5,Medium,Mid
+2865,7,High,Mid
+2869,3,Medium,Low
+2871,11,Medium High,High
+2876,7,High,Mid
+2888,3,Medium,Low
+2890,6,Very High,Low
+2891,10,Medium,High
+2895,1,,Low
+2899,1,,Low
+2902,3,Medium,Low
+2906,4,Low,Mid
+2911,10,Medium,High
+2912,2,Low,Low
+2919,1,,Low
+2921,2,Low,Low
+2922,3,Medium,Low
+2928,2,Low,Low
+2934,5,Medium,Mid
+2936,6,Medium High,Mid
+2938,3,Medium,Low
+2939,4,Medium High,Low
+2940,4,Medium High,Low
+2943,6,Medium High,Mid
+2944,2,Low,Low
+2945,1,,Low
+2947,1,,Low
+2954,2,Low,Low
+2957,15,?,High
+2964,4,Low,Mid
+2968,2,Low,Low
+2970,1,,Low
+2972,3,Medium,Low
+2973,2,Low,Low
+2974,3,Medium,Low
+2976,3,Medium,Low
+2977,2,Low,Low
+2978,2,Low,Low
+2979,1,,Low
+2980,7,High,Mid
+2983,1,,Low
+2984,2,Low,Low
+2987,1,,Low
+2988,6,Medium High,Mid
+2989,5,Medium,Mid
+2991,1,,Low
+2993,2,Low,Low
+2994,3,Medium,Low
+2995,7,High,Mid
+2998,5,High,Low
+2999,6,Very High,Low
+3000,8,?,Low
+3001,5,High,Low
+3002,3,Medium,Low
+3003,1,,Low
+3005,3,Medium,Low
+3006,4,Low,Mid
+3007,2,Low,Low
+3010,7,High,Mid
+3012,15,?,High
+3013,13,Very High,High
+3015,4,Low,Mid
+3018,7,High,Mid
+3024,3,Medium,Low
+3030,2,Low,Low
+3031,1,,Low
+3032,4,Low,Mid
+3033,15,,High
+3034,7,High,Mid
+3036,1,,Low
+3038,2,Low,Low
+3046,2,Low,Low
+3047,3,Medium,Low
+3052,3,Medium,Low
+3053,3,Medium,Low
+3054,13,Very High,High
+3056,6,Very High,Low
+3057,4,Medium High,Low
+3059,4,Medium High,Low
+3060,2,Low,Low
+3062,5,Medium,Mid
+3066,2,Low,Low
+3068,1,,Low
+3070,5,High,Low
+3072,2,Low,Low
+3073,5,Medium,Mid
+3074,1,,Low
+3076,1,,Low
+3077,4,Medium High,Low
+3079,4,Medium High,Low
+3080,12,High,High
+3082,7,High,Mid
+3084,3,Medium,Low
+3089,2,Low,Low
+3090,1,,Low
+3091,1,,Low
+3092,1,,Low
+3094,2,Low,Low
+3095,1,,Low
+3097,2,Low,Low
+3098,2,Low,Low
+3099,7,High,Mid
+3100,1,,Low
+3101,1,,Low
+3102,7,High,Mid
+3103,3,Medium,Low
+3104,4,Medium High,Low
+3106,6,Medium High,Mid
+3107,6,Medium High,Mid
+3108,3,Medium,Low
+3110,6,Medium High,Mid
+3111,7,High,Mid
+3113,2,Low,Low
+3114,1,,Low
+3115,1,,Low
+3116,5,Medium,Mid
+3117,8,Very High,Mid
+3119,3,Medium,Low
