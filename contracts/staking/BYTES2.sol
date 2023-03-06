@@ -64,17 +64,6 @@ contract BYTES2 is PermitControl, ERC20("BYTES", "BYTES") {
 	);
 
 	/**
-		This event is emitted whenever a caller is paid a BYTES reward.
-
-		@param caller The address of the caller who has been paid BYTES.
-		@param reward The amount of BYTES paid.
-	*/
-	event RewardPaid (
-		address indexed caller,
-		uint256 reward
-	);
-
-	/**
 		Construct a new instance of this BYTES 2.0 contract configured with the 
 		given immutable contract addresses.
 
@@ -131,16 +120,17 @@ contract BYTES2 is PermitControl, ERC20("BYTES", "BYTES") {
 		) = IStaker(STAKER).claimReward(_to);
 
 		// Mint both reward BYTES and the DAO tax to targeted recipients.
-		_mint(_to, reward);
-		_mint(TREASURY, daoCommision);
-
-		// Emit the reward event.
-		emit RewardPaid(_to, reward);
+		if (reward > 0) {
+			_mint(_to, reward);
+		}
+		if (daoCommision > 0) {
+			_mint(TREASURY, daoCommision);
+		}
 	}
 
 	/**
 		Permit authorized callers to burn BYTES from the `_from` address. When 
-		BYTES are burnt, 2/3 of the BYTES are sent to the DAO treasury. This 
+		BYTES are burnt, 2/3 of the BYTES burnt are minted to the DAO treasury. This 
 		operation is never expected to overflow given operational bounds on the 
 		amount of BYTES tokens ever allowed to enter circulation.
 
@@ -152,6 +142,11 @@ contract BYTES2 is PermitControl, ERC20("BYTES", "BYTES") {
 		uint256 _amount
 	) hasValidPermit(UNIVERSAL, BURN) external {
 		_burn(_from, _amount);
+
+		/*
+			We are aware that this math does not round perfectly for all values of
+			`_amount`. We don't care.
+		*/
 		uint256 treasuryShare;
 		unchecked {
 			treasuryShare = _amount * 2 / 3;
@@ -175,7 +170,7 @@ contract BYTES2 is PermitControl, ERC20("BYTES", "BYTES") {
 
 		@param _treasury The address of the new treasury.
 	*/
-	function changeTreasureContractAddress (
+	function changeTreasuryContractAddress (
 		address _treasury
 	) hasValidPermit(UNIVERSAL, ADMIN) external {
 		TREASURY = _treasury;

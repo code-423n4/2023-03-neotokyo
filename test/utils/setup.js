@@ -22,12 +22,12 @@ export const prepareContracts = async function (
 	const BYTES_CONTRACT = await ethers.getContractFactory('BYTESContract');
 
 	// Retrieve Neo Tokyo mock testing contract factories.
-	const BOX_MINT = await ethers.getContractFactory('boxMint');
-	const REGULAR_MINT = await ethers.getContractFactory('regularMint');
-	const LP_TOKEN = await ethers.getContractFactory('lpToken');
-	const DATA_CONTRACT_MOCK = await ethers.getContractFactory(
-		'dataContractMock'
+	const IDENTITY_MINT = await ethers.getContractFactory('IdentityMint');
+	const VAULT_MINT = await ethers.getContractFactory('VaultMint');
+	const CITIZEN_MINT = await ethers.getContractFactory(
+		'CitizenMint'
 	);
+	const LP_TOKEN = await ethers.getContractFactory('LPToken');
 
 	// Deploy instances of Neo Tokyo S1 contracts.
 	const beckLoot = await BECK_LOOT.deploy();
@@ -45,17 +45,17 @@ export const prepareContracts = async function (
 	await NTOldBytes.setCitizenContract(NTCitizenDeploy.address);
 
 	// Deploy instances of testing contracts.
-	const boxMint = await BOX_MINT.deploy();
-	await boxMint.deployed();
-	const regularMint = await REGULAR_MINT.deploy();
-	await regularMint.deployed();
-	const lpToken = await LP_TOKEN.deploy();
-	await lpToken.deployed();
+	const VaultMint = await VAULT_MINT.deploy();
+	await VaultMint.deployed();
+	const IdentityMint = await IDENTITY_MINT.deploy();
+	await IdentityMint.deployed();
+	const LPToken = await LP_TOKEN.deploy();
+	await LPToken.deployed();
 
 	// Configure beckLoot (Neo Tokyo Identities) with the mock mint.
-	await beckLoot.setMintContract(regularMint.address);
-	await beckLoot.setRareMintContract(regularMint.address);
-	await beckLoot.setHandMintContract(regularMint.address);
+	await beckLoot.setMintContract(IdentityMint.address);
+	await beckLoot.setRareMintContract(IdentityMint.address);
+	await beckLoot.setHandMintContract(IdentityMint.address);
 
 	// Configure the Neo Tokyo land deployer.
 	await NTLandDeploy.setVaultAddress(vaultBox.address);
@@ -63,7 +63,7 @@ export const prepareContracts = async function (
 
 	// Configure the Neo Tokyo vault with the Identity and mock mint.
 	await vaultBox.setIdAddress(beckLoot.address);
-	await vaultBox.setContract(boxMint.address);
+	await vaultBox.setContract(VaultMint.address);
 
 	// Configure the Neo Tokyo citizen deployer.
 	await NTCitizenDeploy.setVaultAddress(vaultBox.address);
@@ -79,9 +79,9 @@ export const prepareContracts = async function (
 	await NTOldBytes.setIdentityContract(beckLoot.address);
 
 	// Configure the Neo Tokyo citizen deployer with a mock citizen minter.
-	const dataContractMock = await DATA_CONTRACT_MOCK.deploy();
-	await dataContractMock.deployed();
-	await NTCitizenDeploy.setCitizenMintContract(dataContractMock.address);
+	const CitizenMint = await CITIZEN_MINT.deploy();
+	await CitizenMint.deployed();
+	await NTCitizenDeploy.setCitizenMintContract(CitizenMint.address);
 
 	// Retrieve Neo Tokyo S2 contract factories.
 	const NT_OUTER_CITIZEN_DEPLOY = await ethers.getContractFactory(
@@ -130,7 +130,7 @@ export const prepareContracts = async function (
 		ethers.constants.AddressZero
 	);
 	await NTBytes2_0.deployed();
-	await NTBytes2_0.changeTreasureContractAddress(_treasuryAddress);
+	await NTBytes2_0.changeTreasuryContractAddress(_treasuryAddress);
 
 	/*
 		Make the new BYTES 2.0 contract an admin on the old BYTES contract such 
@@ -143,7 +143,7 @@ export const prepareContracts = async function (
 		NTBytes2_0.address,
 		NTCitizenDeploy.address,
 		NTOuterCitizenDeploy.address,
-		lpToken.address,
+		LPToken.address,
 		beckLoot.address,
 		vaultBox.address,
 		S1_CAP,
@@ -177,7 +177,7 @@ export const prepareContracts = async function (
 	// Return the configured contract instances.
 	return [
 		beckLoot, NTItems, NTLandDeploy, vaultBox, NTCitizenDeploy, NTOldBytes,
-		boxMint, regularMint, lpToken, dataContractMock, NTOuterCitizenDeploy, 
+		VaultMint, IdentityMint, LPToken, CitizenMint, NTOuterCitizenDeploy, 
 		NTOuterIdentity, NTS2Items, NTS2LandDeploy, NTBytes2_0, NTStaking
 	];
 }

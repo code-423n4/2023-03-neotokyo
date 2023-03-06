@@ -24,7 +24,7 @@ interface IGenericGetter {
 		@param _citizenId The ID of the S1 Citizen to get a reward rate for. If the 
 			reward rate is zero, then the S1 Citizen does not exist.
 
-		@return The reward rate of `_citizenId`.
+		@return _ The reward rate of `_citizenId`.
 	*/
 	function getRewardRateOfTokenId (
 		uint256 _citizenId
@@ -35,7 +35,7 @@ interface IGenericGetter {
 
 		@param _citizenId The ID of the S1 Citizen to get an Identity ID for.
 
-		@return The token ID of the component Identity for `_citizenId`.
+		@return _ The token ID of the component Identity for `_citizenId`.
 	*/
 	function getIdentityIdOfTokenId (
 		uint256 _citizenId
@@ -48,7 +48,7 @@ interface IGenericGetter {
 
 		@param _identityId The token ID of the S1 Identity to get the class for.
 
-		@return The class of the Identity with token ID `_identityId`.
+		@return _ The class of the Identity with token ID `_identityId`.
 	*/
 	function getClass (
 		uint256 _identityId
@@ -61,7 +61,7 @@ interface IGenericGetter {
 
 		@param _vaultId The ID of the Vault to get the credit multiplier for.
 
-		@return The credit multiplier string associated with `_vaultId`.
+		@return _ The credit multiplier string associated with `_vaultId`.
 	*/
 	function getCreditMultiplier (
 		uint256 _vaultId
@@ -74,6 +74,8 @@ interface IGenericGetter {
 		the token ID of `_tokenId`.
 
 		@param _tokenId The ID of the S1 Citizen to retrieve the Vault token ID for.
+
+		@return _ The correspnding Vault token ID.
 	*/
 	function getVaultIdOfTokenId (
 		uint256 _tokenId

@@ -21,10 +21,6 @@ require('solidity-coverage');
 // Include the Etherscan contract verifier.
 require('@nomiclabs/hardhat-etherscan');
 
-// Retrieve sensitive node and private key details from environment variables.
-const INFURA_PROJECT_ID = process.env.INFURA_PROJECT_ID;
-const DEPLOYER_PRIVATE_KEY = process.env.DEPLOYER_PRIVATE_KEY;
-
 // Export a configuration for Hardhat to use when working with our contracts.
 module.exports = {
 	solidity: {
@@ -55,31 +51,34 @@ module.exports = {
 			}
 		]
 	},
-	networks: {
-		mainnet: {
-			url: `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`,
-			accounts: [`0x${DEPLOYER_PRIVATE_KEY}`]
-		},
-		goerli: {
-			url: `https://goerli.infura.io/v3/${INFURA_PROJECT_ID}`,
-			gasPrice: 'auto',
-			gasLimit: 1000000,
-			accounts: [`0x${DEPLOYER_PRIVATE_KEY}`]
-		}
-	},
-	etherscan: {
-		apiKey: process.env.ETHERSCAN_API_KEY
-	},
-	mocha: {
-		grep: '^(?!.*; using Ganache).*'
-	},
 	gasReporter: {
-		currency: 'USD',
-		coinmarketcap: process.env.COINMARKETCAP_API_KEY
+		excludeContracts: [
+			'ERC20',
+			'ERC721',
+			'beckLoot',
+			'IdentityMint',
+			'vaultBox',
+			'VaultMint',
+			'NTItems',
+			'NTLandDeploy',
+			'BYTESContract',
+			'NTBytesBridge',
+			'NTCitizenDeploy',
+			'CitizenMint',
+			'NTOuterIdentity',
+			'NTS2Items',
+			'NTS2LandDeploy',
+			'NTOuterCitizenDeploy',
+			'LPToken'
+		]
 	},
 	contractSizer: {
 		alphaSort: true,
-		runOnCompile: true,
-		disambiguatePaths: false
+		disambiguatePaths: false,
+		only: [
+			'BYTES2',
+			'NeoTokyoStaker'
+		],
+		runOnCompile: true
 	}
 };

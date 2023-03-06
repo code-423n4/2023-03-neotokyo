@@ -33,7 +33,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 	let NTOuterCitizenDeploy, NTOuterIdentity, NTS2Items, NTS2LandDeploy;
 
 	// Various mock testing contracts.
-	let dataContractMock, boxMint, regularMint, lpToken;
+	let CitizenMint, VaultMint, IdentityMint, LPToken;
 
 	// New Neo Tokyo BYTES 2.0 and staker contract instances.
 	let NTBytes2_0, NTStaking;
@@ -80,7 +80,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 		// Prepare all of the Neo Tokyo S1, S2, and new contracts for testing.
 		[
 			beckLoot, NTItems, NTLandDeploy, vaultBox, NTCitizenDeploy, NTOldBytes, 
-			boxMint, regularMint, lpToken, dataContractMock, NTOuterCitizenDeploy, 
+			VaultMint, IdentityMint, LPToken, CitizenMint, NTOuterCitizenDeploy, 
 			NTOuterIdentity, NTS2Items, NTS2LandDeploy, NTBytes2_0, NTStaking
 		] = await prepareContracts(treasury.address);
 	});
@@ -209,15 +209,15 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			);
 
 			// Specify testing credit multipliers on the S1 Vaults.
-			await boxMint.setCreditMultiplier(
+			await VaultMint.setCreditMultiplier(
 				vaultId,
 				VAULT_CREDIT_MULTIPLIER_IDS.High
 			);
-			await boxMint.setCreditMultiplier(
+			await VaultMint.setCreditMultiplier(
 				vaultIdNoVault,
 				VAULT_CREDIT_MULTIPLIER_IDS['Very High']
 			);
-			await boxMint.setCreditMultiplier(
+			await VaultMint.setCreditMultiplier(
 				vaultIdHand,
 				VAULT_CREDIT_MULTIPLIER_IDS['Very High']
 			);
@@ -226,19 +226,16 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 				Specify reward rates on the mock data contract for the S1 Citizens that 
 				are about to exist.
 			*/
-			await dataContractMock.setRewardRates(
-				ethers.BigNumber.from('1'),
-				vaultId,
+			await CitizenMint.setRewardRates(
+				identityId,
 				ethers.BigNumber.from('5')
 			);
-			await dataContractMock.setRewardRates(
-				ethers.BigNumber.from('2'),
-				0,
+			await CitizenMint.setRewardRates(
+				identityIdNoVault,
 				ethers.BigNumber.from('3')
 			);
-			await dataContractMock.setRewardRates(
-				ethers.BigNumber.from('3'),
-				vaultIdHand,
+			await CitizenMint.setRewardRates(
+				identityIdHand,
 				ethers.BigNumber.from('13')
 			);
 
@@ -293,15 +290,15 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			).to.equal(alice.address);
 
 			// Set the classes of Bob and Alice's new S1 Citizens.
-			await regularMint.setClass(
+			await IdentityMint.setClass(
 				await NTCitizenDeploy.getIdentityIdOfTokenId(citizenId1),
 				CLASS_TO_ID['Assistant']
 			);
-			await regularMint.setClass(
+			await IdentityMint.setClass(
 				await NTCitizenDeploy.getIdentityIdOfTokenId(citizenNoVault), 
 				CLASS_TO_ID['Samurai']
 			);
-			await regularMint.setClass(
+			await IdentityMint.setClass(
 				await NTCitizenDeploy.getIdentityIdOfTokenId(citizenHandOfCitadel), 
 				CLASS_TO_ID['Hand of Citadel']
 			);
@@ -464,18 +461,18 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			);
 
 			// Mint testing LP tokens to users and approve transfer to the staker.
-			await lpToken.mint(alice.address, ethers.utils.parseEther('100'));
-			await lpToken.mint(bob.address, ethers.utils.parseEther('100'));
-			await lpToken.mint(whale.address, ethers.utils.parseEther('10000'));
-			await lpToken.connect(alice.signer).approve(
+			await LPToken.mint(alice.address, ethers.utils.parseEther('100'));
+			await LPToken.mint(bob.address, ethers.utils.parseEther('100'));
+			await LPToken.mint(whale.address, ethers.utils.parseEther('10000'));
+			await LPToken.connect(alice.signer).approve(
 				NTStaking.address,
 				ethers.constants.MaxUint256
 			);
-			await lpToken.connect(bob.signer).approve(
+			await LPToken.connect(bob.signer).approve(
 				NTStaking.address,
 				ethers.constants.MaxUint256
 			);
-			await lpToken.connect(whale.signer).approve(
+			await LPToken.connect(whale.signer).approve(
 				NTStaking.address,
 				ethers.constants.MaxUint256
 			);
@@ -559,7 +556,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 		});
 
 		// Simulate a basic staking scenario between Alice and Bob.
-		it('S1 Citizen Staking', async function () {
+		it('a typical happy-path staking test', async function () {
 
 			// Bob stakes his S1 Citizen.
 			await NTStaking.connect(bob.signer).stake(
@@ -727,7 +724,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			);
 
 			// Configure the LP token contract address on the staker.
-			await NTStaking.connect(owner.signer).configureLP(lpToken.address);
+			await NTStaking.connect(owner.signer).configureLP(LPToken.address);
 
 			// Jump to three days after Bob's stake.
 			await ethers.provider.send('evm_setNextBlockTimestamp', [
@@ -944,12 +941,12 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			);
 
 			// Withdraw the remainder of Bob's LP tokens.
-			let bobInitialLpBalance = await lpToken.balanceOf(bob.address);
+			let bobInitialLpBalance = await LPToken.balanceOf(bob.address);
 			await NTStaking.connect(bob.signer).withdraw(
 				ASSETS.LP.id,
 				ethers.utils.parseEther('10')
 			);
-			let bobLpBalance = await lpToken.balanceOf(bob.address);
+			let bobLpBalance = await LPToken.balanceOf(bob.address);
 			bobLpBalance.sub(bobInitialLpBalance).should.be.equal(
 				ethers.utils.parseEther('10')
 			);

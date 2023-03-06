@@ -1,3 +1,8 @@
+# Custom
+artifacts/
+cache/
+package-lock.json
+
 # Logs
 logs
 *.log
