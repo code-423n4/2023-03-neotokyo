@@ -25,18 +25,18 @@ The Neo Tokyo ecosystem can be complicated to explain. To request any additional
 - Discord (0x Tim Clancy#0001)
 
 [Neo Tokyo](https://neotokyo.codes) is an NFT ecosystem consisting of:
-- [Neo Tokyo S1 Identities](https://etherscan.io/address/0x86357a19e5537a8fba9a004e555713bc943a66c0) stored for testing here in this repository as [`beckLoot.sol`](contracts/s1/beckLoot.sol).
-- [Neo Tokyo S1 Vaults](https://etherscan.io/address/0xab0b0dd7e4eab0f9e31a539074a03f1c1be80879) stored for testing here in this repository as [`vaultBox.sol`](contracts/s1/vaultBox.sol).
-- [Neo Tokyo S1 Items](https://etherscan.io/address/0x0938e3f7ac6d7f674fed551c93f363109bda3af9) stored for testing here in this repository as [`NTItems.sol`](contracts/s1/NTItems.sol).
-- [Neo Tokyo S1 Land](https://etherscan.io/address/0x3c54b798b3aad4f6089533af3bdbd6ce233019bb) stored for testing here in this repository as [`NTLandDeploy.sol`](contracts/s1/NTLandDeploy.sol).
-- [Neo Tokyo BYTES 1.0](https://etherscan.io/address/0x7d647b1a0dcd5525e9c6b3d14be58f27674f8c95) stored for testing here in this repository as [`BYTESContract.sol`](contracts/s1/BYTESContract.sol).
-- [Neo Tokyo S1 Citizens](https://etherscan.io/address/0xb668beb1fa440f6cf2da0399f8c28cab993bdd65) stored for testing here in this repository as [`NTCitizenDeploy.sol`](contracts/s1/NTCitizenDeploy.sol). Neo Tokyo S1 Citizens are currently created by burning BYTES 1.0 tokens and combining an S1 Identity, S1 Item, S1 Land, and *optionally* an S1 Vault. As part of these contracts, this S1 Citizen creation process will begin using the new [BYTES 2.0](contracts/staking/BYTES2.sol) contract.
+- [Neo Tokyo S1 Identities](https://etherscan.io/address/0x86357a19e5537a8fba9a004e555713bc943a66c0) stored for testing here in this repository as [`beckLoot.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s1/beckLoot.sol).
+- [Neo Tokyo S1 Vaults](https://etherscan.io/address/0xab0b0dd7e4eab0f9e31a539074a03f1c1be80879) stored for testing here in this repository as [`vaultBox.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s1/vaultBox.sol).
+- [Neo Tokyo S1 Items](https://etherscan.io/address/0x0938e3f7ac6d7f674fed551c93f363109bda3af9) stored for testing here in this repository as [`NTItems.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s1/NTItems.sol).
+- [Neo Tokyo S1 Land](https://etherscan.io/address/0x3c54b798b3aad4f6089533af3bdbd6ce233019bb) stored for testing here in this repository as [`NTLandDeploy.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s1/NTLandDeploy.sol).
+- [Neo Tokyo BYTES 1.0](https://etherscan.io/address/0x7d647b1a0dcd5525e9c6b3d14be58f27674f8c95) stored for testing here in this repository as [`BYTESContract.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s1/BYTESContract.sol).
+- [Neo Tokyo S1 Citizens](https://etherscan.io/address/0xb668beb1fa440f6cf2da0399f8c28cab993bdd65) stored for testing here in this repository as [`NTCitizenDeploy.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s1/NTCitizenDeploy.sol). Neo Tokyo S1 Citizens are currently created by burning BYTES 1.0 tokens and combining an S1 Identity, S1 Item, S1 Land, and *optionally* an S1 Vault. As part of these contracts, this S1 Citizen creation process will begin using the new [BYTES 2.0](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/staking/BYTES2.sol) contract.
 
 Similarly to the Neo Tokyo S1 Citizens, there exists an ecosystem of Neo Tokyo S2 Citizens:
-- [Neo Tokyo S2 Identities](https://etherscan.io/address/0x698fbaaca64944376e2cdc4cad86eaa91362cf54) stored for testing here in this repository as [`NTOuterIdentity.sol`](contracts/s2/NTOuterIdentity.sol).
-- [Neo Tokyo S2 Items](https://etherscan.io/address/0x7ac66d40d80d2d8d1e45d6b5b10a1c9d1fd69354) stored for testing here in this repository as [`NTS2Items.sol`](contracts/s2/NTS2Items.sol).
-- [Neo Tokyo S2 Land](https://etherscan.io/address/0xf90980ae7a44e2d18b9615396ff5e9252f1df639) stored for testing here in this repository as [`NTS2LandDeploy.sol`](contracts/s2/NTS2LandDeploy.sol).
-- [Neo Tokyo S2 Citizens](https://etherscan.io/address/0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4) stored for testing here in this repository as [`NTOuterCitizenDeploy.sol`](contracts/s2/NTOuterCitizenDeploy.sol). The Neo Tokyo S2 Citizen is created by combining the other component pieces, though that fact is irrelevant to the specifics of this staking system.
+- [Neo Tokyo S2 Identities](https://etherscan.io/address/0x698fbaaca64944376e2cdc4cad86eaa91362cf54) stored for testing here in this repository as [`NTOuterIdentity.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s2/NTOuterIdentity.sol).
+- [Neo Tokyo S2 Items](https://etherscan.io/address/0x7ac66d40d80d2d8d1e45d6b5b10a1c9d1fd69354) stored for testing here in this repository as [`NTS2Items.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s2/NTS2Items.sol).
+- [Neo Tokyo S2 Land](https://etherscan.io/address/0xf90980ae7a44e2d18b9615396ff5e9252f1df639) stored for testing here in this repository as [`NTS2LandDeploy.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s2/NTS2LandDeploy.sol).
+- [Neo Tokyo S2 Citizens](https://etherscan.io/address/0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4) stored for testing here in this repository as [`NTOuterCitizenDeploy.sol`](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/s2/NTOuterCitizenDeploy.sol). The Neo Tokyo S2 Citizen is created by combining the other component pieces, though that fact is irrelevant to the specifics of this staking system.
 
 The Neo Tokyo staking program operates as follows:
 - Holders of the existing Neo Tokyo BYTES 1.0 tokens may migrate them via upgrading into BYTES 2.0 tokens.
@@ -65,8 +65,8 @@ The only contracts that are in scope for this contest are the two listed below, 
 
 | Contract | SLOC | Purpose | Libraries used |  
 | ----------- | ----------- | ----------- | ----------- |
-| [BYTES2.sol](contracts/staking/BYTES2.sol) | 88 | the new Neo Tokyo ERC-20 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [NeoTokyoStaker.sol](contracts/staking/NeoTokyoStaker.sol) | 881 | the new Neo Tokyo staker | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [BYTES2.sol](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/staking/BYTES2.sol) (partial, see below) | 88 | the new Neo Tokyo ERC-20 | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [NeoTokyoStaker.sol](https://github.com/code-423n4/2023-03-neotokyo/blob/main/contracts/staking/NeoTokyoStaker.sol) (partial, see below) | 881 | the new Neo Tokyo staker | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
 We are already aware of some gas optimizations that we have opted not to make for the sake of clarity and simplicity, which we believe ultimately improves security. For each in-scope function we will note gas optimizations that we do not consider to be in-scope.
 
@@ -119,7 +119,7 @@ This also includes any concerns about centralization or administrative functions
 - `NeoTokyoStaker.configurePools`, which is intended to let an administrator configure the reward points accrued by a particular asset type across a particular time window.
 - `NeoTokyoStaker.configureCaps`, which is intended to let an administrator configure the respective Neo Tokyo S1 and S2 Citizen staking caps.
 
-One exception that we consider out of scope for gas optimization but in scope for any security issues unreleated to a malcious administrator is the legacy reward-claiming flow of calling `NTCitizenDeploy.getReward`, which ultimately calls `BYTES2.getReward`. We support this legacy flow for historic UI reasons and would consider a security finding to be relevant.
+One exception that we consider out of scope for gas optimization but in scope for any security issues unrelated to a malicious administrator is the legacy reward-claiming flow of calling `NTCitizenDeploy.getReward`, which ultimately calls `BYTES2.getReward`. We support this legacy flow for historic UI reasons and would consider a security finding to be relevant.
 
 # Additional Context
 
