@@ -95,7 +95,7 @@ Within this contract, the only functions in scope are:
 
 ## Out of scope
 
-Every file and contract function **not explicitly listed above is considered out of scope** for this contest in terms of both security and gas optimization.
+Every file and contract function **not explicitly listed above is considered out of scope** for this contest in terms of both security and gas optimization. Any changes to the smart contracts which are stylistic in nature are also out of scope.
 
 This includes the entire existing Neo Tokyo ecosystem consisting of the deployed mainnet versions of `beckLoot` (Neo Tokyo S1 Identities), `vaultBox` (Neo Tokyo S1 Vaults), `NTItems` (Neo Tokyo S1 Items), `NTLandDeploy` (Neo Tokyo S1 Land), `BYTESContract` (Neo Tokyo BYTES 1.0), `NTBytesBridge` (Neo Tokyo BYTES 1.0 Bridge), `NTCitizenDeploy` (Neo Tokyo S1 Citizen), `NTOuterIdentity` (Neo Tokyo S2 Identities), `NTS2Items` (Neo Tokyo S2 Items), `NTS2LandDeploy` (Neo Tokyo S2 Land), `NTOuterCitizenDeploy` (Neo Tokyo S2 Citizens).
 
@@ -156,3 +156,7 @@ To build the project from a fresh `git clone`, perform the following.
 1. Install dependencies using `npm install`.
 2. Run the test cases using `npx hardhat test`.
 3. The Hardhat gas reporter is configured in `hardhat.config.js` and should provide automatic gas reporting for the relevant contracts used in testing.
+
+## Scripts
+
+In the [scripts](https://github.com/code-423n4/2023-03-neotokyo/tree/main/scripts) folder, you will find a `determine-citizen-yields.js` file along with an `output.txt` file that it generated. You should not need this information for testing, but it is included here to illustrate the method of deducing a Neo Tokyo S1 Citizen's component Identity "Credit Yield" trait as provided to the staker via `NeoTokyoStaker.configureIdentityCreditPoints`.

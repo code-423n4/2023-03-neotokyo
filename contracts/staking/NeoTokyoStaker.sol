@@ -58,6 +58,17 @@ error AmountExceedsCap (
 );
 
 /**
+	Thrown when attempting to stake BYTES into an unowned Citizen.
+
+	@param citizenId The token ID of the Citizen involved in the attempted stake.
+	@param seasonId The season ID of the Citizen, whether S1 or S2.
+*/
+error CannotStakeIntoUnownedCitizen (
+	uint256 citizenId,
+	uint256 seasonId
+);
+
+/**
 	Thrown when attempting to stake BYTES into an invalid Citizen season.
 
 	@param seasonId The ID of the Citizen season to try staking BYTES into.
@@ -129,7 +140,7 @@ error TimelockNotCleared (
 
 	@param citizenId The ID of the S1 Citizen attempted to be withdrawn.
 */
-error CannotUnstakeUnownedS1 (
+error CannotWithdrawUnownedS1 (
 	uint256 citizenId
 );
 
@@ -138,7 +149,7 @@ error CannotUnstakeUnownedS1 (
 
 	@param citizenId The ID of the S2 Citizen attempted to be withdrawn.
 */
-error CannotUnstakeUnownedS2 (
+error CannotWithdrawUnownedS2 (
 	uint256 citizenId
 );
 
@@ -1056,6 +1067,11 @@ contract NeoTokyoStaker is PermitControl, ReentrancyGuard {
 				revert AmountExceedsCap(citizenStatus.stakedBytes + amount, cap);
 			}
 
+			// Validate that the caller actually staked the Citizen.
+			if (citizenStatus.timelockEndTime == 0) {
+				revert CannotStakeIntoUnownedCitizen(citizenId, seasonId);
+			}
+
 			PoolData storage pool = _pools[AssetType.S1_CITIZEN];
 			unchecked {
 				uint256 bonusPoints = (amount * 100 / _BYTES_PER_POINT);
@@ -1070,6 +1086,11 @@ contract NeoTokyoStaker is PermitControl, ReentrancyGuard {
 			uint256 cap = NO_VAULT_CAP;
 			if (citizenStatus.stakedBytes + amount > cap) {
 				revert AmountExceedsCap(citizenStatus.stakedBytes + amount, cap);
+			}
+
+			// Validate that the caller actually staked the Citizen.
+			if (citizenStatus.timelockEndTime == 0) {
+				revert CannotStakeIntoUnownedCitizen(citizenId, seasonId);
 			}
 
 			PoolData storage pool = _pools[AssetType.S2_CITIZEN];
@@ -1168,7 +1189,9 @@ contract NeoTokyoStaker is PermitControl, ReentrancyGuard {
 		@custom:param If the asset being staked is an S1 Citizen, this is the ID of 
 			a Vault to attempt to optionally attach.
 		@custom:param If the asset being staked is an S1 Citizen, this is a flag to 
-			attempt to claim a Hand of the Citadel bonus.
+			attempt to claim a Hand of the Citadel bonus. If the asset being staked 
+			is BYTES, this is either one or two to select the Neo Tokyo season ID of 
+			the S1 or S2 Citizen that BYTES are being staked into.
 	*/
 	function stake (
 		AssetType _assetType,
@@ -1447,7 +1470,7 @@ contract NeoTokyoStaker is PermitControl, ReentrancyGuard {
 
 		// Validate that the caller actually staked this asset.
 		if (stakedCitizen.timelockEndTime == 0) {
-			revert CannotUnstakeUnownedS1(citizenId);
+			revert CannotWithdrawUnownedS1(citizenId);
 		}
 		
 		// Return any staked BYTES.
@@ -1522,7 +1545,7 @@ contract NeoTokyoStaker is PermitControl, ReentrancyGuard {
 
 		// Validate that the caller actually staked this asset.
 		if (stakedCitizen.timelockEndTime == 0) {
-			revert CannotUnstakeUnownedS2(citizenId);
+			revert CannotWithdrawUnownedS2(citizenId);
 		}
 
 		// Return any staked BYTES.

@@ -18,7 +18,7 @@ should();
 	contract testing suite, retrieve testing wallets, and create contract
 	factories from the artifacts we are testing.
 */
-describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
+describe('Testing BYTES 2.0 & Neo Tokyo Staker', function () {
 
 	// Track the current time and snapshot ID for reverting between tests.
 	let currentTime, snapshotId;
@@ -97,7 +97,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 	});
 
 	// Prepare to test staker functionality.
-	describe('Perform Staking Tests', function() {
+	describe('with example configuration', function () {
 
 		// Track IDs for Bob's S1 Citizen components.
 		let identityId, vaultId, itemCacheId, landDeedId;
@@ -245,6 +245,8 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 				- Bob's S1 Citizen has an Identity "Credit Yield" of "Low"
 				- Alice's Vaultless Citizen has one of "Mid"
 				- Alice's Hand Citizen has one of "High"
+				This method of deducing Identity "Credit Yield" is required because the
+				"Credit Yield" trait is not otherwise accessible to a smart contract.
 			*/
 
 			// Assemble Bob's S1 Citizen.
@@ -423,7 +425,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			);
 
 			// Simulate the migration to BYTES 2.0 by jumping into the future.
-			ethers.provider.send('evm_increaseTime', [ 100000000 ]);
+			ethers.provider.send('evm_increaseTime', [ 1000000000 ]);
 			ethers.provider.send('evm_mine');
 
 			// Have Bob claim his S1 Citizen's BYTES reward.
@@ -555,8 +557,8 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			);
 		});
 
-		// Simulate a basic staking scenario between Alice and Bob.
-		it('a typical happy-path staking test', async function () {
+		// Simulate a competitive staking scenario between Alice and Bob.
+		it('a comprehensive happy-path test', async function () {
 
 			// Bob stakes his S1 Citizen.
 			await NTStaking.connect(bob.signer).stake(
@@ -662,12 +664,12 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			let bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('8919540229885057471'),
-				ethers.BigNumber.from('90000000')
+				ethers.BigNumber.from('1000000000')
 			);
 			let daoBalanceBob = await NTBytes2_0.balanceOf(treasury.address);
 			daoBalanceBob.sub(daoBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('275862068960000000'),
-				ethers.BigNumber.from('90000000')
+				ethers.BigNumber.from('1000000000')
 			);
 
 			// Simulate a change in reward rates 16-hours into Alice's stake.
@@ -703,12 +705,12 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			let aliceBalance = await NTBytes2_0.balanceOf(alice.address);
 			aliceBalance.sub(aliceBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('161480842911877000000'),
-				ethers.BigNumber.from('90000000')
+				ethers.BigNumber.from('1000000000')
 			);
 			let daoBalanceAlice = await NTBytes2_0.balanceOf(treasury.address);
 			daoBalanceAlice.sub(daoBalanceBob).should.be.closeTo(
 				ethers.BigNumber.from('4994252873563220000'),
-				ethers.BigNumber.from('90000000')
+				ethers.BigNumber.from('1000000000')
 			);
 
 			// Simulate Alice staking for another 24 hours to simulate partial claims.
@@ -720,7 +722,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			aliceBalance = await NTBytes2_0.balanceOf(alice.address);
 			aliceBalance.sub(aliceBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('132120689655172000000'),
-				ethers.BigNumber.from('90000000')
+				ethers.BigNumber.from('1000000000')
 			);
 
 			// Configure the LP token contract address on the staker.
@@ -798,7 +800,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('168820881226054000000'),
-				ethers.BigNumber.from('9000000000000000')
+				ethers.BigNumber.from('100000000000000000')
 			);
 
 			// Activate the ability to stake BYTES into Citizens.
@@ -842,7 +844,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('285273249738767000000'),
-				ethers.BigNumber.from('9000000000000000')
+				ethers.BigNumber.from('100000000000000000')
 			);
 
 			// Bob maximally-stakes his S1 and S2 Citizens.
@@ -888,7 +890,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('168760204081633000000'),
-				ethers.BigNumber.from('9000000000000000')
+				ethers.BigNumber.from('100000000000000000')
 			);
 
 			// Verify the re-up of LP tokens by Bob.
@@ -911,7 +913,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('173610204081633000000'),
-				ethers.BigNumber.from('9000000000000000')
+				ethers.BigNumber.from('100000000000000000')
 			);
 
 			// Advance five years to verify that withdrawals are all cleared.
@@ -937,7 +939,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('168760204081633000000'),
-				ethers.BigNumber.from('9000000000000000')
+				ethers.BigNumber.from('100000000000000000')
 			);
 
 			// Withdraw the remainder of Bob's LP tokens.
@@ -963,7 +965,7 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			bobBalance = await NTBytes2_0.balanceOf(bob.address);
 			bobBalance.sub(bobBalanceInitial).should.be.closeTo(
 				ethers.BigNumber.from('144510204081633000000'),
-				ethers.BigNumber.from('9000000000000000')
+				ethers.BigNumber.from('100000000000000000')
 			);
 
 			// Confirm that Bob can stake LP tokens with a new multiplier now.
@@ -1033,6 +1035,1001 @@ describe('Testing BYTES 2.0 & Neo Tokyo Staker', async function () {
 			ownerOne.should.be.equal(alice.address);
 			let vaultOwner = await vaultBox.ownerOf(vaultIdNoVault);
 			vaultOwner.should.be.equal(alice.address);
+		});
+
+		// Simulate S1 Citizen staking.
+		describe('with staked S1 Citizens', function () {
+			let bobStakeTime, aliceStakeTime;
+			beforeEach(async () => {
+
+				// Bob stakes his S1 Citizen for 30 days.
+				await NTStaking.connect(bob.signer).stake(
+					ASSETS.S1_CITIZEN.id,
+					TIMELOCK_OPTION_IDS['30'],
+					citizenId1,
+					0,
+					0
+				);
+
+				// Get the time at which Bob staked.
+				let priorBlockNumber = await ethers.provider.getBlockNumber();
+				let priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+				bobStakeTime = priorBlock.timestamp;
+
+				// Alice stakes her S1 Citizen with an additional Vault for 90 days.
+				await NTStaking.connect(alice.signer).stake(
+					ASSETS.S1_CITIZEN.id,
+					TIMELOCK_OPTION_IDS['90'],
+					citizenNoVault,
+					vaultIdNoVault,
+					0
+				);
+
+				// Alice stakes her S1 Hand Citizen for 180 days.
+				await NTStaking.connect(alice.signer).stake(
+					ASSETS.S1_CITIZEN.id,
+					TIMELOCK_OPTION_IDS['180'],
+					citizenHandOfCitadel,
+					0,
+					1
+				);
+
+				// Get the time at which Alice staked.
+				priorBlockNumber = await ethers.provider.getBlockNumber();
+				priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+				aliceStakeTime = priorBlock.timestamp;
+			});
+
+			// Test Alice and Bob's stake with a reward rate-change mid-stake.
+			it('S1 Citizens give correct reward', async function () {
+
+				// Confirm that Bob's S1 Citizen has the expected staking state.
+				let bobStakedS1 = await NTStaking.stakedS1(bob.address, citizenId1);
+				bobStakedS1.points.should.be.equal(200);
+
+				// Confirm Bob's current staker position.
+				let bobS1Position = await NTStaking.getStakerPosition(
+					bob.address,
+					ASSETS.S1_CITIZEN.id
+				);
+				bobS1Position.should.deep.equal([ ethers.BigNumber.from(1) ]);
+
+				// Confirm Bob's total staker position.
+				let bobPosition = await NTStaking.getStakerPositions(bob.address);
+				bobPosition.stakedS1Citizens[0].citizenId.should.be.equal(
+					ethers.BigNumber.from(1)
+				);
+
+				// Confirm that Alice's S1 Citizen has the expected staking state.
+				let aliceStakedS1 = await NTStaking.stakedS1(
+					alice.address,
+					citizenNoVault
+				);
+				aliceStakedS1.points.should.be.equal(625);
+
+				// Confirm that Alice's S1 Hand Citizen has the expected staking state.
+				let aliceStakedS1Hand = await NTStaking.stakedS1(
+					alice.address,
+					citizenHandOfCitadel
+				);
+
+				// S1 Hand Citizens are explicitly treated as if they have '?' Vaults.
+				aliceStakedS1Hand.points.should.be.equal(1350);
+
+				// Confirm Alice's current staker position.
+				let aliceS1Position = await NTStaking.getStakerPosition(
+					alice.address,
+					ASSETS.S1_CITIZEN.id
+				);
+				aliceS1Position.should.deep.equal([
+					ethers.BigNumber.from(2),
+					ethers.BigNumber.from(3)
+				]);
+
+				// Confirm Alice's total staker position.
+				let alicePosition = await NTStaking.getStakerPositions(alice.address);
+				alicePosition.stakedS1Citizens[0].citizenId.should.be.equal(
+					ethers.BigNumber.from(2)
+				);
+				alicePosition.stakedS1Citizens[1].citizenId.should.be.equal(
+					ethers.BigNumber.from(3)
+				);
+
+				// Retrieve the current balances of BYTES.
+				let daoBalanceInitial = await NTBytes2_0.balanceOf(treasury.address);
+				let bobBalanceInitial = await NTBytes2_0.balanceOf(bob.address);
+				let aliceBalanceInitial = await NTBytes2_0.balanceOf(alice.address);
+
+				// Simulate Bob staking for 12 hours.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 12)
+				]);
+				await NTCitizenDeploy.connect(bob.signer).getReward();
+
+				// Confirm Bob and the DAO received their proper share.
+				let bobBalance = await NTBytes2_0.balanceOf(bob.address);
+				bobBalance.sub(bobBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('8919540229885057471'),
+					ethers.BigNumber.from('1000000000')
+				);
+				let daoBalanceBob = await NTBytes2_0.balanceOf(treasury.address);
+				daoBalanceBob.sub(daoBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('275862068960000000'),
+					ethers.BigNumber.from('1000000000')
+				);
+
+				// Simulate a change in reward rates 16-hours into Alice's stake.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 16)
+				]);
+				await NTStaking.connect(owner.signer).configurePools(
+					[
+						{
+							assetType: ASSETS.S1_CITIZEN.id,
+							daoTax: S1_DAO_SHARE,
+							rewardWindows: [
+								{
+									startTime: 0,
+									reward: ethers.utils.parseEther('200').div(60 * 60 * 24)
+								},
+								{
+									startTime: aliceStakeTime + (60 * 60 * 16),
+									reward: ethers.utils.parseEther('150').div(60 * 60 * 24)
+								}
+							]
+						}
+					]
+				);
+
+				// Simulate Alice staking for 24 hours.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24)
+				]);
+				await NTCitizenDeploy.connect(alice.signer).getReward();
+
+				// Confirm Alice and the DAO received their proper share.
+				let aliceBalance = await NTBytes2_0.balanceOf(alice.address);
+				aliceBalance.sub(aliceBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('161480842911877000000'),
+					ethers.BigNumber.from('1000000000')
+				);
+				let daoBalanceAlice = await NTBytes2_0.balanceOf(treasury.address);
+				daoBalanceAlice.sub(daoBalanceBob).should.be.closeTo(
+					ethers.BigNumber.from('4994252873563220000'),
+					ethers.BigNumber.from('1000000000')
+				);
+
+				// Simulate Alice staking for another 24 hours.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 2)
+				]);
+				await NTCitizenDeploy.connect(alice.signer).getReward();
+				aliceBalanceInitial = aliceBalance;
+				aliceBalance = await NTBytes2_0.balanceOf(alice.address);
+				aliceBalance.sub(aliceBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('132120689655172000000'),
+					ethers.BigNumber.from('1000000000')
+				);
+			});
+
+			// Test withdrawing the S1 Citizens.
+			it('S1 Citizens can be withdrawn', async () => {
+	
+				// Confirm that Bob can withdraw his S1 Citizen.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 30)
+				]);
+				await NTStaking.connect(bob.signer).withdraw(
+					ASSETS.S1_CITIZEN.id,
+					citizenId1
+				);
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 90)
+				]);
+				await NTStaking.connect(alice.signer).withdraw(
+					ASSETS.S1_CITIZEN.id,
+					citizenNoVault
+				);
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 180)
+				]);
+				await NTStaking.connect(alice.signer).withdraw(
+					ASSETS.S1_CITIZEN.id,
+					citizenHandOfCitadel
+				);
+
+				// Confirm that the citizen balances are correct.
+				let ownerOne = await NTCitizenDeploy.ownerOf(citizenId1);
+				ownerOne.should.be.equal(bob.address);
+				let ownerTwo = await NTCitizenDeploy.ownerOf(citizenNoVault);
+				ownerTwo.should.be.equal(alice.address);
+				let vaultOwner = await vaultBox.ownerOf(vaultIdNoVault);
+				vaultOwner.should.be.equal(alice.address);
+				let ownerThree = await NTCitizenDeploy.ownerOf(citizenHandOfCitadel);
+				ownerThree.should.be.equal(alice.address);
+			});
+			
+			// Test the timelock on withdrawing the S1 Citizens.
+			it('S1 Citizens cannot be withdrawn early', async () => {
+	
+				// Confirm that Bob cannot withdraw his S1 Citizen early.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 29)
+				]);
+				await expect(
+					NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenId1
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 89)
+				]);
+				await expect(
+					NTStaking.connect(alice.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenNoVault
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 179)
+				]);
+				await expect(
+					NTStaking.connect(alice.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenHandOfCitadel
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+
+				// Confirm that the citizen balances are correct.
+				let ownerOne = await NTCitizenDeploy.ownerOf(citizenId1);
+				ownerOne.should.be.equal(NTStaking.address);
+				let ownerTwo = await NTCitizenDeploy.ownerOf(citizenNoVault);
+				ownerTwo.should.be.equal(NTStaking.address);
+				let vaultOwner = await vaultBox.ownerOf(vaultIdNoVault);
+				vaultOwner.should.be.equal(NTStaking.address);
+				let ownerThree = await NTCitizenDeploy.ownerOf(citizenHandOfCitadel);
+				ownerThree.should.be.equal(NTStaking.address);
+			});
+
+			// Confirm that callers cannot steal S1 Citizens.
+			it('cannot withdraw unowned S1 Citizens', async () => {
+	
+				// Confirm that Bob cannot withdraw Alice's S1 Citizen.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 30)
+				]);
+				await expect(
+					NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenHandOfCitadel
+					)
+				).to.be.revertedWith('CannotWithdrawUnownedS1');
+			});
+
+			// Confirm that callers cannot boost other Citizens.
+			it('cannot stake BYTES into unowned S1 Citizens', async () => {
+	
+				// Activate the ability to stake BYTES into Citizens.
+				await NTStaking.connect(owner.signer).configurePools(
+					[
+						{
+							assetType: ASSETS.BYTES.id,
+							daoTax: 0,
+							rewardWindows: [
+								{
+									startTime: 0,
+									reward: 0
+								}
+							]
+						}
+					]
+				);
+
+				// Prevent wasting BYTES.
+				await expect(
+					NTStaking.connect(bob.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('200'),
+						citizenHandOfCitadel,
+						1
+					)
+				).to.be.revertedWith('CannotStakeIntoUnownedCitizen');
+				await expect(
+					NTStaking.connect(bob.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('200'),
+						ethers.BigNumber.from(4),
+						1
+					)
+				).to.be.revertedWith('CannotStakeIntoUnownedCitizen');
+			});
+
+			// Simulate BYTES 2.0 staking.
+			describe('with staked BYTES', function () {
+				beforeEach(async () => {
+
+					// Activate the ability to stake BYTES into Citizens.
+					await NTStaking.connect(owner.signer).configurePools(
+						[
+							{
+								assetType: ASSETS.BYTES.id,
+								daoTax: 0,
+								rewardWindows: [
+									{
+										startTime: 0,
+										reward: 0
+									}
+								]
+							}
+						]
+					);
+
+					// Bob maximally-stakes his Citizen.
+					await NTStaking.connect(bob.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('2000'),
+						citizenId1,
+						1
+					);
+
+					// Get the time at which Bob staked.
+					let priorBlockNumber = await ethers.provider.getBlockNumber();
+					let priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+					bobStakeTime = priorBlock.timestamp;
+
+					// Alice maximally-stakes her Citizens.
+					await NTStaking.connect(alice.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('2000'),
+						citizenNoVault,
+						1
+					);
+					await NTStaking.connect(alice.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('2000'),
+						citizenHandOfCitadel,
+						1
+					);
+
+					// Get the time at which Alice staked.
+					priorBlockNumber = await ethers.provider.getBlockNumber();
+					priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+					aliceStakeTime = priorBlock.timestamp;
+				});
+
+				// Test Alice and Bob's stake with a reward rate-change mid-stake.
+				it('S1 Citizens give correct reward', async function () {
+
+					// Confirm that Bob's S1 Citizen has the expected staking state.
+					let bobStakedS1 = await NTStaking.stakedS1(bob.address, citizenId1);
+					bobStakedS1.points.should.be.equal(1200);
+
+					// Confirm Bob's current staker position.
+					let bobS1Position = await NTStaking.getStakerPosition(
+						bob.address,
+						ASSETS.S1_CITIZEN.id
+					);
+					bobS1Position.should.deep.equal([ ethers.BigNumber.from(1) ]);
+
+					// Confirm Bob's total staker position.
+					let bobPosition = await NTStaking.getStakerPositions(bob.address);
+					bobPosition.stakedS1Citizens[0].citizenId.should.be.equal(
+						ethers.BigNumber.from(1)
+					);
+
+					// Confirm that Alice's S1 Citizen has the expected staking state.
+					let aliceStakedS1 = await NTStaking.stakedS1(
+						alice.address,
+						citizenNoVault
+					);
+					aliceStakedS1.points.should.be.equal(1625);
+					let aliceStakedS1Hand = await NTStaking.stakedS1(
+						alice.address,
+						citizenHandOfCitadel
+					);
+
+					// S1 Hand Citizens are explicitly treated as if they have '?' Vaults.
+					aliceStakedS1Hand.points.should.be.equal(2350);
+
+					// Confirm Alice's current staker position.
+					let aliceS1Position = await NTStaking.getStakerPosition(
+						alice.address,
+						ASSETS.S1_CITIZEN.id
+					);
+					aliceS1Position.should.deep.equal([
+						ethers.BigNumber.from(2),
+						ethers.BigNumber.from(3)
+					]);
+
+					// Confirm Alice's total staker position.
+					let alicePosition = await NTStaking.getStakerPositions(alice.address);
+					alicePosition.stakedS1Citizens[0].citizenId.should.be.equal(
+						ethers.BigNumber.from(2)
+					);
+					alicePosition.stakedS1Citizens[1].citizenId.should.be.equal(
+						ethers.BigNumber.from(3)
+					);
+
+					// Retrieve the current balances of BYTES.
+					let daoBalanceInitial = await NTBytes2_0.balanceOf(treasury.address);
+					let aliceBalanceInitial = await NTBytes2_0.balanceOf(alice.address);
+
+					// Simulate Bob staking for 12 hours.
+					let bobBalanceInitial = await NTBytes2_0.balanceOf(bob.address);
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						bobStakeTime + (60 * 60 * 12)
+					]);
+					await NTCitizenDeploy.connect(bob.signer).getReward();
+
+					// Confirm Bob and the DAO received their proper share.
+					let bobBalance = await NTBytes2_0.balanceOf(bob.address);
+					bobBalance.sub(bobBalanceInitial).should.be.closeTo(
+						ethers.BigNumber.from('22492753623188400000'),
+						ethers.BigNumber.from('1000000000')
+					);
+					let daoBalanceBob = await NTBytes2_0.balanceOf(treasury.address);
+					daoBalanceBob.sub(daoBalanceInitial).should.be.closeTo(
+						ethers.BigNumber.from('695652173913044000'),
+						ethers.BigNumber.from('1000000000')
+					);
+
+					// Simulate a change in reward rates 16-hours into Alice's stake.
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						aliceStakeTime + (60 * 60 * 16)
+					]);
+					await NTStaking.connect(owner.signer).configurePools(
+						[
+							{
+								assetType: ASSETS.S1_CITIZEN.id,
+								daoTax: S1_DAO_SHARE,
+								rewardWindows: [
+									{
+										startTime: 0,
+										reward: ethers.utils.parseEther('200').div(60 * 60 * 24)
+									},
+									{
+										startTime: aliceStakeTime + (60 * 60 * 16),
+										reward: ethers.utils.parseEther('150').div(60 * 60 * 24)
+									}
+								]
+							}
+						]
+					);
+
+					// Simulate Alice staking for 24 hours.
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						aliceStakeTime + (60 * 60 * 24)
+					]);
+					await NTCitizenDeploy.connect(alice.signer).getReward();
+
+					// Confirm Alice and the DAO received their proper share.
+					let aliceBalance = await NTBytes2_0.balanceOf(alice.address);
+					aliceBalance.sub(aliceBalanceInitial).should.be.closeTo(
+						ethers.BigNumber.from('136596618357488000000'),
+						ethers.BigNumber.from('1000000000')
+					);
+					let daoBalanceAlice = await NTBytes2_0.balanceOf(treasury.address);
+					daoBalanceAlice.sub(daoBalanceBob).should.be.closeTo(
+						ethers.BigNumber.from('4224637681159420000'),
+						ethers.BigNumber.from('1000000000')
+					);
+				});
+
+				// Test withdrawing the S1 Citizens with BYTES.
+				it('withdrawing S1 returns staked BYTES', async () => {
+		
+					// Check the outflow of BYTES held directly by the staker.
+					let stakerBalanceInitial = await NTBytes2_0.balanceOf(
+						NTStaking.address
+					);
+
+					// Confirm that Bob can withdraw his S1 Citizen.
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						bobStakeTime + (60 * 60 * 24 * 30)
+					]);
+					await NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenId1
+					);
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						aliceStakeTime + (60 * 60 * 24 * 90)
+					]);
+					await NTStaking.connect(alice.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenNoVault
+					);
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						aliceStakeTime + (60 * 60 * 24 * 180)
+					]);
+					await NTStaking.connect(alice.signer).withdraw(
+						ASSETS.S1_CITIZEN.id,
+						citizenHandOfCitadel
+					);
+
+					// Confirm that the staker has returned the escrow BYTES.
+					let stakerBalance = await NTBytes2_0.balanceOf(NTStaking.address);
+					stakerBalanceInitial.sub(stakerBalance).should.be.equal(
+						ethers.utils.parseEther('6000')
+					);
+
+					// Confirm that the citizen balances are correct.
+					let ownerOne = await NTCitizenDeploy.ownerOf(citizenId1);
+					ownerOne.should.be.equal(bob.address);
+					let ownerTwo = await NTCitizenDeploy.ownerOf(citizenNoVault);
+					ownerTwo.should.be.equal(alice.address);
+					let vaultOwner = await vaultBox.ownerOf(vaultIdNoVault);
+					vaultOwner.should.be.equal(alice.address);
+					let ownerThree = await NTCitizenDeploy.ownerOf(citizenHandOfCitadel);
+					ownerThree.should.be.equal(alice.address);
+				});
+			});
+		});
+
+		// Simulate S2 Citizen staking.
+		describe('with staked S2 Citizens', function () {
+			let bobStakeTime;
+			beforeEach(async () => {
+
+				// Stake Bob's S2 Citizens.
+				await NTStaking.connect(bob.signer).stake(
+					ASSETS.S2_CITIZEN.id,
+					TIMELOCK_OPTION_IDS['30'],
+					s2One,
+					0,
+					0
+				);
+				await NTStaking.connect(bob.signer).stake(
+					ASSETS.S2_CITIZEN.id,
+					TIMELOCK_OPTION_IDS['90'],
+					s2Two,
+					0,
+					0
+				);
+	
+				// Get the time at which Bob staked.
+				let priorBlockNumber = await ethers.provider.getBlockNumber();
+				let priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+				bobStakeTime = priorBlock.timestamp;
+			});
+
+			// Test Bob's staked S2 Citizens.
+			it('S2 Citizens give correct reward', async function () {
+
+				// Validate the correctness of Bob's staker state.
+				let bobPosition = await NTStaking.getStakerPositions(bob.address);
+				bobPosition.stakedS2Citizens[0].citizenId.should.be.equal(
+					ethers.BigNumber.from(1)
+				);
+				bobPosition.stakedS2Citizens[0].points.should.be.equal(
+					ethers.BigNumber.from(100)
+				);
+				bobPosition.stakedS2Citizens[1].citizenId.should.be.equal(
+					ethers.BigNumber.from(2)
+				);
+				bobPosition.stakedS2Citizens[1].points.should.be.equal(
+					ethers.BigNumber.from(125)
+				);
+
+				// Jump to one day after Bob's S2 stake.
+				let bobBalance = await NTBytes2_0.balanceOf(bob.address);
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24)
+				]);
+	
+				// Verify correct reward totals.
+				await NTCitizenDeploy.connect(bob.signer).getReward();
+				let bobBalanceInitial = bobBalance;
+				bobBalance = await NTBytes2_0.balanceOf(bob.address);
+				bobBalance.sub(bobBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('97000000000000000000'),
+					ethers.BigNumber.from('100000000000000000')
+				);
+			});
+
+			// Test withdrawing the S2 Citizens.
+			it('S2 Citizens can be withdrawn', async () => {
+				
+				// Confirm that Bob can withdraw his S2 Citizens.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 30)
+				]);
+				await NTStaking.connect(bob.signer).withdraw(
+					ASSETS.S2_CITIZEN.id,
+					s2One
+				);
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 90)
+				]);
+				await NTStaking.connect(bob.signer).withdraw(
+					ASSETS.S2_CITIZEN.id,
+					s2Two
+				);
+
+				// Confirm that the citizen balances are correct.
+				let ownerOne = await NTOuterCitizenDeploy.ownerOf(s2One);
+				ownerOne.should.be.equal(bob.address);
+				let ownerTwo = await NTOuterCitizenDeploy.ownerOf(s2Two);
+				ownerTwo.should.be.equal(bob.address);
+			});
+
+			// Test the timelock on withdrawing the S2 Citizens.
+			it('S2 Citizens cannot be withdrawn early', async () => {
+	
+				// Confirm that Bob cannot withdraw his S2 Citizens early.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 15)
+				]);
+				await expect(
+					NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S2_CITIZEN.id,
+						s2One
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 45)
+				]);
+				await expect(
+					NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S2_CITIZEN.id,
+						s2Two
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+
+				// Confirm that the citizen balances are correct.
+				let ownerOne = await NTOuterCitizenDeploy.ownerOf(s2One);
+				ownerOne.should.be.equal(NTStaking.address);
+				let ownerTwo = await NTOuterCitizenDeploy.ownerOf(s2Two);
+				ownerTwo.should.be.equal(NTStaking.address);
+			});
+
+			// Confirm that callers cannot steal S2 Citizens.
+			it('cannot withdraw unowned S2 Citizens', async () => {
+	
+				// Confirm that Bob can withdraw his S2 Citizens.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 30)
+				]);
+				await expect(
+					NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S2_CITIZEN.id,
+						ethers.BigNumber.from('3')
+					)
+				).to.be.revertedWith('CannotWithdrawUnownedS2');
+			});
+
+			// Confirm that callers cannot boost other Citizens.
+			it('cannot stake BYTES into unowned S2 Citizens', async () => {
+
+				// Activate the ability to stake BYTES into Citizens.
+				await NTStaking.connect(owner.signer).configurePools(
+					[
+						{
+							assetType: ASSETS.BYTES.id,
+							daoTax: 0,
+							rewardWindows: [
+								{
+									startTime: 0,
+									reward: 0
+								}
+							]
+						}
+					]
+				);
+
+				// Prevent wasting BYTES.
+				await expect(
+					NTStaking.connect(bob.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('200'),
+						ethers.BigNumber.from(3),
+						2
+					)
+				).to.be.revertedWith('CannotStakeIntoUnownedCitizen');
+			});
+
+			// Simulate BYTES 2.0 staking.
+			describe('with staked BYTES', function () {
+				beforeEach(async () => {
+
+					// Activate the ability to stake BYTES into Citizens.
+					await NTStaking.connect(owner.signer).configurePools(
+						[
+							{
+								assetType: ASSETS.BYTES.id,
+								daoTax: 0,
+								rewardWindows: [
+									{
+										startTime: 0,
+										reward: 0
+									}
+								]
+							}
+						]
+					);
+
+					// Bob maximally-stakes his Citizens.
+					await NTStaking.connect(bob.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('200'),
+						s2One,
+						2
+					);
+					await NTStaking.connect(bob.signer).stake(
+						ASSETS.BYTES.id,
+						TIMELOCK_OPTION_IDS['30'],
+						ethers.utils.parseEther('200'),
+						s2Two,
+						2
+					);
+
+					// Get the time at which Bob staked.
+					let priorBlockNumber = await ethers.provider.getBlockNumber();
+					let priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+					bobStakeTime = priorBlock.timestamp;
+				});
+
+				// Test Bob's stake.
+				it('S2 Citizens give correct reward', async function () {
+
+					// Validate the correctness of Bob's staker state.
+					let bobPosition = await NTStaking.getStakerPositions(bob.address);
+					bobPosition.stakedS2Citizens[0].citizenId.should.be.equal(
+						ethers.BigNumber.from(1)
+					);
+					bobPosition.stakedS2Citizens[0].points.should.be.equal(
+						ethers.BigNumber.from(200)
+					);
+					bobPosition.stakedS2Citizens[1].citizenId.should.be.equal(
+						ethers.BigNumber.from(2)
+					);
+					bobPosition.stakedS2Citizens[1].points.should.be.equal(
+						ethers.BigNumber.from(225)
+					);
+
+					// Jump to one day after Bob's S2 stake.
+					let bobBalance = await NTBytes2_0.balanceOf(bob.address);
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						bobStakeTime + (60 * 60 * 24)
+					]);
+		
+					// Verify correct reward totals.
+					await NTCitizenDeploy.connect(bob.signer).getReward();
+					let bobBalanceInitial = bobBalance;
+					bobBalance = await NTBytes2_0.balanceOf(bob.address);
+					bobBalance.sub(bobBalanceInitial).should.be.closeTo(
+						ethers.BigNumber.from('97000000000000000000'),
+						ethers.BigNumber.from('100000000000000000')
+					);
+				});
+
+				// Test withdrawing the S2 Citizens with BYTES.
+				it('withdrawing S2 returns staked BYTES', async () => {
+		
+					// Check the outflow of BYTES held directly by the staker.
+					let stakerBalanceInitial = await NTBytes2_0.balanceOf(
+						NTStaking.address
+					);
+
+					// Confirm that Bob can withdraw his S2 Citizens.
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						bobStakeTime + (60 * 60 * 24 * 30)
+					]);
+					await NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S2_CITIZEN.id,
+						s2One
+					);
+					await ethers.provider.send('evm_setNextBlockTimestamp', [
+						bobStakeTime + (60 * 60 * 24 * 90)
+					]);
+					await NTStaking.connect(bob.signer).withdraw(
+						ASSETS.S2_CITIZEN.id,
+						s2Two
+					);
+
+					// Confirm that the citizen balances are correct.
+					let ownerOne = await NTOuterCitizenDeploy.ownerOf(s2One);
+					ownerOne.should.be.equal(bob.address);
+					let ownerTwo = await NTOuterCitizenDeploy.ownerOf(s2Two);
+					ownerTwo.should.be.equal(bob.address);
+
+					// Confirm that the staker has returned the escrow BYTES.
+					let stakerBalance = await NTBytes2_0.balanceOf(NTStaking.address);
+					stakerBalanceInitial.sub(stakerBalance).should.be.equal(
+						ethers.utils.parseEther('400')
+					);
+				});
+			});
+		});
+
+		// Simulate LP staking.
+		describe('with staked LP tokens', function () {
+			let aliceStakeTime, bobStakeTime;
+			beforeEach(async () => {
+
+				// Configure the LP token contract address on the staker.
+				await NTStaking.connect(owner.signer).configureLP(LPToken.address);
+
+				// Stake Alice's LP tokens for 30 days.
+				await NTStaking.connect(alice.signer).stake(
+					ASSETS.LP.id,
+					TIMELOCK_OPTION_IDS['30'],
+					ethers.utils.parseEther('40'),
+					0,
+					0
+				);
+				let priorBlockNumber = await ethers.provider.getBlockNumber();
+				let priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+				aliceStakeTime = priorBlock.timestamp;
+
+				// Stake Bob's LP tokens for 1080 days.
+				await NTStaking.connect(bob.signer).stake(
+					ASSETS.LP.id,
+					TIMELOCK_OPTION_IDS['1080'],
+					ethers.utils.parseEther('10'),
+					0,
+					0
+				);
+				priorBlockNumber = await ethers.provider.getBlockNumber();
+				priorBlock = await ethers.provider.getBlock(priorBlockNumber);
+				bobStakeTime = priorBlock.timestamp;
+			});
+
+			// Test the LP token stake.
+			it('LP tokens give correct reward', async function () {
+
+				// Validate the correctness of Alice's staker state.
+				let alicePosition = await NTStaking.getStakerPositions(alice.address);
+				alicePosition.stakedLPPosition.amount.should.be.equal(
+					ethers.utils.parseEther('40')
+				);
+				alicePosition.stakedLPPosition.points.should.be.equal(4000);
+	
+				// Validate the correctness of Bob's staker state.
+				let bobPosition = await NTStaking.getStakerPositions(bob.address);
+				bobPosition.stakedLPPosition.amount.should.be.equal(
+					ethers.utils.parseEther('10')
+				);
+				bobPosition.stakedLPPosition.points.should.be.equal(4000);
+	
+				// Jump to one day after Bob's LP stake.
+				let aliceBalance = await NTBytes2_0.balanceOf(alice.address);
+				let bobBalance = await NTBytes2_0.balanceOf(bob.address);
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24)
+				]);
+	
+				// Verify correct reward totals.
+				await NTCitizenDeploy.connect(bob.signer).getReward();
+				let bobBalanceInitial = bobBalance;
+				bobBalance = await NTBytes2_0.balanceOf(bob.address);
+				bobBalance.sub(bobBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('24250000000000000000'),
+					ethers.BigNumber.from('100000000000000000')
+				);
+				await NTCitizenDeploy.connect(alice.signer).getReward();
+				let aliceBalanceInitial = aliceBalance;
+				aliceBalance = await NTBytes2_0.balanceOf(alice.address);
+				aliceBalance.sub(aliceBalanceInitial).should.be.closeTo(
+					ethers.BigNumber.from('24250000000000000000'),
+					ethers.BigNumber.from('100000000000000000')
+				);
+			});
+
+			// Test withdrawing LP tokens.
+			it('LP tokens can be withdrawn', async () => {
+
+				// Withdraw Alice's LP tokens.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 30)
+				]);
+				let aliceInitialLpBalance = await LPToken.balanceOf(alice.address);
+				await NTStaking.connect(alice.signer).withdraw(
+					ASSETS.LP.id,
+					ethers.utils.parseEther('40')
+				);
+				let aliceLpBalance = await LPToken.balanceOf(alice.address);
+				aliceLpBalance.sub(aliceInitialLpBalance).should.be.equal(
+					ethers.utils.parseEther('40')
+				);
+
+				// Withdraw Bob's LP tokens.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 1080)
+				]);
+				let bobInitialLpBalance = await LPToken.balanceOf(bob.address);
+				await NTStaking.connect(bob.signer).withdraw(
+					ASSETS.LP.id,
+					ethers.utils.parseEther('10')
+				);
+				let bobLpBalance = await LPToken.balanceOf(bob.address);
+				bobLpBalance.sub(bobInitialLpBalance).should.be.equal(
+					ethers.utils.parseEther('10')
+				);
+
+				// Confirm that callers can stake LP tokens with a new multiplier now.
+				await NTStaking.connect(alice.signer).stake(
+					ASSETS.LP.id,
+					TIMELOCK_OPTION_IDS['180'],
+					ethers.utils.parseEther('40'),
+					0,
+					0
+				);
+				await NTStaking.connect(bob.signer).stake(
+					ASSETS.LP.id,
+					TIMELOCK_OPTION_IDS['180'],
+					ethers.utils.parseEther('10'),
+					0,
+					0
+				);
+			});
+
+			// Test the timelock on withdrawing the LP tokens.
+			it('LP tokens cannot be withdrawn early', async () => {
+
+				// Confirm that Bob cannot withdraw his S2 Citizens early.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 29)
+				]);
+				await expect(
+					NTStaking.connect(alice.signer).withdraw(
+						ASSETS.LP.id,
+						ethers.utils.parseEther('40')
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					bobStakeTime + (60 * 60 * 24 * 1079)
+				]);
+				await expect(
+					NTStaking.connect(bob.signer).withdraw(
+						ASSETS.LP.id,
+						ethers.utils.parseEther('10')
+					)
+				).to.be.revertedWith('TimelockNotCleared');
+
+				// Confirm that the LP balances are correct.
+				let stakerBalance = await LPToken.balanceOf(NTStaking.address);
+				stakerBalance.should.be.equal(ethers.utils.parseEther('50'));
+			});
+
+			// Confirm staker enforces withdrawal limits.
+			it('cannot withdraw unowned LP tokens', async () => {
+
+				// Withdraw Alice's LP tokens.
+				await ethers.provider.send('evm_setNextBlockTimestamp', [
+					aliceStakeTime + (60 * 60 * 24 * 30)
+				]);
+				await expect(
+					NTStaking.connect(alice.signer).withdraw(
+						ASSETS.LP.id,
+						ethers.utils.parseEther('41')
+					)
+				).to.be.revertedWith('NotEnoughLPTokens');
+
+				// Confirm that the LP balances are correct.
+				let stakerBalance = await LPToken.balanceOf(NTStaking.address);
+				stakerBalance.should.be.equal(ethers.utils.parseEther('50'));
+			});
+
+			// Confirm staker enforces timelock matching.
+			it('cannot stake LPs with mismatched timelock', async () => {
+				await expect(
+					NTStaking.connect(alice.signer).stake(
+						ASSETS.LP.id,
+						TIMELOCK_OPTION_IDS['90'],
+						ethers.utils.parseEther('40'),
+						0,
+						0
+					)
+				).to.be.revertedWith('MismatchedTimelock');
+			});
 		});
 	});
 });
