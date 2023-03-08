@@ -6,7 +6,7 @@
   - Judge + presort awards: $10,000 USDC
   - Scout awards: $500 USDC
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-03-neotokyo-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-03-neo-tokyo-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts  March 08, 2023 20:00 UTC
 - Ends March 15, 2023 20:00 UTC
