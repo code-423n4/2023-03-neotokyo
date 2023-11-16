@@ -1,0 +1,1373 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2023 / neotokyo-mar08
+==============================================================
+
+[03/06/2023 20:19] kartoonjoy (pinned)
+👋 Hello and welcome to the contest channel for the $60,500 USDC **Neo Tokyo** contest!
+
+📆 Contest opens 03/08/2023 20:00 (20:00 UTC) and runs through 03/15/2023 20:00 (20:00 UTC) (7 days).
+
+Please give a warm welcome to the Neo Tokyo team, particularly @tim-clancy.eth, who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2023-03-neo-tokyo-contest
+
+{Embed}
+https://code4rena.com/contests/2023-03-neo-tokyo-contest
+Code4rena Neo Tokyo contest
+$60,500 USDC
+8 March 2023—15 March 2023
+Code4rena - ARCHIVE-Q1-2023 - neotokyo-mar08 [1082395240566104216].txt_Files/c4-og-banner-0FCFA.png
+
+{Reactions}
+👋 (8) 
+
+[03/06/2023 20:20] kartoonjoy
+Pinned a message.
+
+
+[03/06/2023 20:20] kartoonjoy
+Hi All 👋! Let's please limit conversation until the contest begins. Thanks!
+
+{Reactions}
+👍 (15) 
+
+[03/08/2023 20:01] tim_clancy.eth
+The Neo Tokyo ecosystem can be a bit complicated to understand. The staker logic is fairly straightforward but has a few nuances in how it interacts with different parts of Neo Tokyo items. Please do not hesitate to ask me any questions you may have.
+
+:salute_milady:
+
+{Reactions}
+🫡 (14) 
+
+[03/08/2023 20:04] alejandrocovrr#6904
+Hi, how do I register?
+
+
+[03/08/2023 20:06] kartoonjoy
+You're already a warden so you can just sign into to submit findings.
+
+
+[03/08/2023 20:14] thepicodes (pinned)
+**Automated findings:** https://gist.github.com/Picodes/01427c59b07c651699136589541159a7
+
+{Reactions}
+👍 (4) 
+
+[03/08/2023 20:16] 0xpathfindr
+Official websites or social media for the ecosystem?
+
+
+[03/08/2023 20:17] 0xpathfindr
+Found it: https://neotokyo.codes/
+
+
+[03/08/2023 20:18] rohlfing
+https://linktr.ee/neotokyocode
+
+
+[03/08/2023 20:25] kartoonjoy (pinned)
+Wardens, please note that the automated findings output is posted below. These are considered publicly known issues and are not eligible for awards.
+
+**Automated findings: **
+https://gist.github.com/Picodes/01427c59b07c651699136589541159a7
+
+{Embed}
+https://gist.github.com/Picodes/01427c59b07c651699136589541159a7
+4naly3er-2023-03-neotokyo.md
+GitHub Gist: instantly share code, notes, and snippets.
+Code4rena - ARCHIVE-Q1-2023 - neotokyo-mar08 [1082395240566104216].txt_Files/gist-og-image-17482.png
+
+
+[03/08/2023 20:25] kartoonjoy
+Pinned a message.
+
+
+[03/08/2023 20:26] kartoonjoy
+Pinned a message.
+
+
+[03/08/2023 20:55] aba1842
+lol, `beckLoot` Becker Loot ahahah :))
+
+
+[03/08/2023 20:55] aba1842
+it is going to be a pleasure to help NT with this one! as a fellow S2 holder
+
+{Reactions}
+❤️ (5) 
+
+[03/09/2023 03:25] 0xjuntao
+This is a Cyberpunk Audit 😬
+
+
+[03/09/2023 05:10] noahfig.eth
+AssertionError: expected BigNumber { value: "200" } to equal 200 I'm getting this errors running the test. Any idea?
+
+
+[03/09/2023 05:22] noahfig.eth
+yarn add ethereum-waffle -> solved this for me
+
+{Reactions}
+👍 (4) 
+
+[03/09/2023 07:47] rebirthisnear
+what is meant by the word window?
+
+
+[03/09/2023 08:24] y1cunhui
+This seems to be a private audit? why I cannot see the content of this contest but can get in this channel
+
+
+[03/09/2023 08:37] devabdee
+No its not a private contest. Try refresshing your tab, browser, pc, actually everything
+
+
+[03/09/2023 09:21] PrasadLak#0622
+@tim-clancy.eth I dm you. Pls check inbox.
+
+{Reactions}
+salute_milady 
+
+[03/09/2023 10:03] rebirthisnear
+please explain what the points are
+
+
+[03/09/2023 14:08] y1cunhui
+Is there any official doc or whitepaper we can follow? Or only  the things in the contest README
+
+
+[03/09/2023 14:28] ldzoid
+I tried to find it, the best I see is readme
+
+
+[03/09/2023 14:30] lirios.
+I had found https://blog.neotokyo.codes/bytes-2/ with a link to a draft whitepaper at the bottom.
+
+{Embed}
+Alex Becker
+https://blog.neotokyo.codes/bytes-2/
+Bytes 2.0 (Full Tokenomics Update Plan)
+
+{Reactions}
+🔥 
+
+[03/09/2023 14:31] rappie
+> Neo Tokyo S1 Citizens are currently created by burning BYTES 1.0 tokens and combining an S1 Identity, S1 Item, S1 Land, and optionally an S1 Vault. 
+
+does this mean that you can use `beckLoot.claim()` in the test setup but in the live version you use `NTCitizenDeploy.mintIdentity()` which burns the BYTES? `createCitizen()` which is used in the testsuite doesnt seem to burn BYTES, right?
+
+
+[03/09/2023 14:37] y1cunhui
+After reading through the only material: README, I still have no idea of what the whole Neo Tokyo Ecosystem is, and waht's the relationship between the so many out-of-scope contracts(s1,  s2...) and the in-scope 2 contracts. I thought there would be some systematic introduction of the whole system....Or does understanding the entire ecosystem have no bearing on the two contracts we need to audit?
+
+
+[03/09/2023 14:45] Deleted User
+I was wondering that as well, until I realized how huge the staking contract actually is
+
+
+[03/09/2023 14:45] Deleted User
+Hello everyone!! This is my very 1st auditing contest 😆
+
+{Reactions}
+👋 (14) 🔥 (3) 
+
+[03/09/2023 16:02] 0xjuntao
+dev team don't care😂
+
+{Reactions}
+chefskiss (3) 
+
+[03/09/2023 16:33] ldzoid
+Bruh, that "we don't care" comment at the end each time is too much 😂
+
+{Reactions}
+🤣 (13) 
+
+[03/09/2023 17:28] tim_clancy.eth
+The dev cares but operates on a different timezone. Thank you for the interest everyone, will be answering questions now.
+
+{Reactions}
+👍 (5) 
+
+[03/09/2023 17:30] tim_clancy.eth
+Thank you for catching this, I'll update the `package.json` accordingly. We did test a clean install but may have missed this due to either global dependencies or due to not using yarn.
+
+
+[03/09/2023 17:48] tim_clancy.eth
+I use the word `window` in this contract to refer to a fixed period of time between two timestamps. For example, this concept is used in `NeoTokyoStaker.getPoolReward`:
+```js
+/*
+    Determine the reward for the `_recipient` based on their points total. 
+    Iterate through the entire array of pool reward windows to find the 
+    applicable time period.
+*/
+uint256 totalReward;
+uint256 lastPoolRewardTime = lastRewardTime[_recipient][_assetType];
+uint256 windowCount = pool.rewardCount;
+for (uint256 i; i < windowCount; ) {
+  ...
+}
+```
+to iterate through each asset pool's mapping of `RewardWindow` structs:
+```js
+/**
+    This struct defines a specific time window in reward emission history. For 
+    a particular asset staking pool, it represents that beginning from 
+    `startTime`, the pool had a per-second reward emission rate of `reward`.
+
+    @param startTime The time at which the daily reward activated.
+    @param reward The reward emission rate beginning at `startTime`.
+*/
+struct RewardWindow {
+    uint128 startTime;
+    uint128 reward;
+}
+
+/**
+    This struct is used to define both the configuration details for a 
+    particular asset staking pool and the state of that pool as callers begin 
+    interacting with it.
+
+    @param totalPoints The total number of points in the pool.
+    @param daoTax The percent, in basis points, of the reward emissions sent to 
+        the DAO.
+    @param rewardCount A count of the number of reward windows in the 
+        `rewardWindows` mapping, used for iterating.
+    @param rewardWindows A mapping of the historic amount of BYTES token     
+        rewarded per-second across all stakers in this particular pool.
+*/
+struct PoolData {
+    uint256 totalPoints;
+    uint256 daoTax;
+    uint256 rewardCount;
+    mapping ( uint256 => RewardWindow ) rewardWindows;
+}
+```
+and perhaps the above documentation explains it best: rewards are accumulated at different rates between different logical timestamps that an administrator can set to change the rate of rewards over time.
+
+
+[03/09/2023 17:49] tim_clancy.eth
+You can find an example of the rewards being dynamically adjusted like this in several of the test cases, like this:
+```js
+// Simulate a change in reward rates 16-hours into Alice's stake.
+await ethers.provider.send('evm_setNextBlockTimestamp', [
+    aliceStakeTime + (60 * 60 * 16)
+]);
+await NTStaking.connect(owner.signer).configurePools(
+    [
+        {
+            assetType: ASSETS.S1_CITIZEN.id,
+            daoTax: S1_DAO_SHARE,
+            rewardWindows: [
+                {
+                    startTime: 0,
+                    reward: ethers.utils.parseEther('200').div(60 * 60 * 24)
+                },
+                {
+                    startTime: aliceStakeTime + (60 * 60 * 16),
+                    reward: ethers.utils.parseEther('150').div(60 * 60 * 24)
+                }
+            ]
+        }
+    ]
+);
+```
+
+{Reactions}
+🔥 
+
+[03/09/2023 17:49] tim_clancy.eth
+^ in this example, the S1 Citizen rewards are being configured such that they are "200 per day" reduced to "150 per day" beginning at the `aliceStakeTime + (60 * 60 * 16)` timestamp.
+
+
+[03/09/2023 17:54] kartoonjoy (pinned)
+Frequently Asked Questions 👉
+
+
+[03/09/2023 17:54] kartoonjoy
+Pinned a message.
+
+
+[03/09/2023 17:58] dec3ntraliz3d
+@tim-clancy.eth  Can you please help me understand below ?
+
+1. What is Vault and their association with S1 Citizens
+2. CreditYield
+3. Identity Points
+
+
+[03/09/2023 18:17] tim_clancy.eth
+Answered in FAQ thread: https://discord.com/channels/810916927919620096/1083447614508384377/1083453445660487830.
+
+{Embed}
+https://discord.com/channels/810916927919620096/1083447614508384377/1083453445660487830.
+Discord - A New Way to Chat with Friends & Communities
+Discord is the easiest way to communicate over voice, video, and text.  Chat, hang out, and stay close with your friends and communities.
+
+
+[03/09/2023 18:19] tim_clancy.eth
+Please follow just the README. Understanding the entire ecosystem is not required for understanding how these two smart contracts should function; I'll provide a much more detailed explanation of the relevant parts here. My apologies for the lack of clarity on this one.
+
+{Reactions}
+👍 
+
+[03/09/2023 18:19] tim_clancy.eth
+Please do not view this announcement as a source of truth; it is outdated and the contracts do/should behave differently than this original plan.
+
+{Reactions}
+👍 
+
+[03/09/2023 18:26] tim_clancy.eth
+Correct. That behavior of the Neo Tokyo ecosystem is out of scope for this audit but I should have explained it anyways. Here's what happens on mainnet:
+- `beckLoot.claim()` can claim some Neo Tokyo Identity items.
+- Neo Tokyo also has the concept of Bought Identities which behave insofar as `NeoTokyoStaker` is concerned the same way that the `beckLoot.claim()` Identity items do.
+- It appears you are correct, the testing setup of `createCitizen()` does not do that. Insofar as the `NeoTokyoStaker` is concerned that also doesn't matter: every asset that is not `BYTES2` already exists in the Neo Tokyo ecosystem and will exist before a caller stakes them.
+
+{Reactions}
+👍 
+
+[03/09/2023 18:37] tim_clancy.eth
+Certainly. When staking any asset in the `NeoTokyoStaker`, we must assign the staker a score in points to determine what share of the emission rewards they earn. See https://discord.com/channels/810916927919620096/1083447614508384377/1083453445660487830.
+
+Ccompared to S2 Citizens and LP tokens, S1 Citizens support a more detailed method of assigning a points score.
+  0. At the time of their creation, S1 Citizens may be assembled with a Vault. We call this kind of Vault that is part of an S1 Citizen "a component Vault" to distinguish it from a non-component Vault which may also be staked alongside the S1 Citizen at the time of staking. An S1 Citizen also must be assembled with an Identity, "a component Identity".
+  1. Each component Identity of a Neo Tokyo S1 Citizen has a "Credit Yield" metadata trait, like this https://gigamart.com/collections/neo-tokyo-identities/1023 item which has a "Credit Yield" of "Low".
+  2. Administrative functions of the `NeoTokyoStaker` contract allow Neo Tokyo administrators to assign points to the S1 Citizen based on the value of its component Identity, these are the "Identity Points".
+  3. Therefore, when you stake an S1 Citizen, its weight in points is a function of these Identity Points, a multiplier based on an admin-configured timelock, a multiplier based on an admin-configured bonus of any associated Vault's "Credit Multiplier", and a bonus based on any `BYTES2` optionally staked into the S1 Citizen.
+
+{Reactions}
+thankyou (4) 👍 (2) 
+
+[03/09/2023 18:56] dec3ntraliz3d
+Thanks Tim! So, an S1 citizen without a companion vault can choose to stake or not stake their vault. However, an S1 citizen with a companion vault will be automatically staked when the citizen is staked, as the companion vault is tied to the citizen's staking status.
+
+
+[03/09/2023 18:58] luksgrin
+Heya frens! Quick question: what does `Any changes to the smart contracts which are stylistic in nature are also out of scope` exactly mean?
+
+
+[03/09/2023 19:08] tim_clancy.eth
+Exactly! The non-component Vault staking is just there so a staker can get the benefit of using a Vault as if they had put a Vault into their S1 Citizen without having to first disassemble their S1 Citizen and reassemble it with the Vault.
+
+{Reactions}
+👍 
+
+[03/09/2023 19:11] tim_clancy.eth
+It means I don't really want to argue with wardens about my naming conventions, whether every line of my block comments should start with `*`, whether an 80 character limit is actually a good idea, whether I should actually invoke divine protection via `@custom:benediction` tags, etc. I've been doing contracts for a while and this is the general style I've generally grown to be comfortable in, any popular linters be damned.
+```
+license
+pragma
+external imports
+my imports
+errors
+contract
+constants
+structs/state variables in order of appearance
+events
+constructors
+view functions
+user-functions in order of appearance
+admin-functions
+```
+but there are no rewards for matching that ordering perfectly.
+
+{Reactions}
+✅ (2) 
+
+[03/09/2023 19:13] Cryptor#9119
+What is the hand of the citadel?
+
+
+[03/09/2023 19:13] carlitox477
+When I run a test it throws the next error "SyntaxError: Cannot use import statement outside a module". Anybody in the same situation?
+
+
+[03/09/2023 19:14] tim_clancy.eth
+Good question, it's one final factor that changes S1 Citizen scoring that I'd missed. S1 Citizens have classes, one of those classes is "Hand of the Citadel", and an S1 of that class should receive the multiplier as if it has a `?` reward rate Vault whether or not it actually does.
+
+
+[03/09/2023 19:14] tim_clancy.eth
+I'm preparing much much more detailed documentation about this.
+
+
+[03/09/2023 19:14] luksgrin
+Gotcha! Thank you so much for clarifying 🙂
+
+{Reactions}
+salute_milady 
+
+[03/09/2023 19:16] tim_clancy.eth
+Sounds like some CJS versus ESM module stuff. What version of Node are you using?
+
+
+[03/09/2023 19:17] carlitox477
+16.8.0. After updating, and setup the environment again all works perfect. Thx!
+
+
+[03/09/2023 19:39] tim_clancy.eth
+Great, glad you got it resolved! I'm on v16.17.0 and have no issues with running the tests straight out of the contest repo.
+
+
+[03/09/2023 20:55] chaindev
+Is the existing test code (`NeoTokyoStaker.test.js`) is enough one?
+
+
+[03/09/2023 21:05] tim_clancy.eth
+It has pretty decent coverage of non-admin functions IMO.
+
+{Reactions}
+👍 (2) 
+
+[03/10/2023 08:31] 0xdanielh
+what does the TREASURY for? Is the token minted to TREASURY will be distributed to users?
+
+
+[03/10/2023 08:32] 0xdanielh
+Just curious about why the protocol does not care about rounding issue.
+
+
+[03/10/2023 08:55] 0xjuntao
+@tim-clancy.eth Hi, Time, can you please clarify what is the seasonId used for staking BYTES?
+
+
+[03/10/2023 08:56] 0xjuntao
+also, what are the usages of old BYTES? As far as I know, it can be used to mint something like identites and lands, any more usages?
+
+
+[03/10/2023 14:03] 0xpathfindr
+Hey, sent you a dm but you aren't accepting friends
+
+
+[03/10/2023 14:03] 0xpathfindr
+Hope it will still go through
+
+
+[03/10/2023 14:03] 0xpathfindr
+Otherwise, kindly accept dm
+
+
+[03/10/2023 15:48] descharre
+What's the difference between BYTES 2.0 LP and BYTES 2.0 tokens?
+
+
+[03/10/2023 16:33] tim_clancy.eth
+Good morning, will be answering more questions here shortly. 🙂
+
+{Reactions}
+🦾 
+
+[03/10/2023 17:55] PrasadLak#0622
+@tim-clancy.eth Dm you . pls check it
+
+
+[03/10/2023 19:31] 0xdaef0f
+Hello ser, what is the *difference* between a component vault & a non-component vault?
+
+
+[03/10/2023 23:10] tim_clancy.eth
+Neo Tokyo S1 Citizens can be assembled from their component NFTs (Identity, Item, Land, and _optionally_ a Vault). They need not necessarily contain a Vault. I call such a Vault logically assembled into an S1 Citizen "a component Vault" to distinguish it from a "non-component Vault" which was not assembled into an S1 Citizen.
+
+
+[03/10/2023 23:10] tim_clancy.eth
+S1 Citizens without component Vaults may have a non-component Vault supplied at the time of staking which they can earn benefits from.
+
+
+[03/11/2023 08:45] parsely.
+Please may I check for my own understanding , when staking ```if (_pools[_assetType].rewardWindows[0].startTime >= block.timestamp) {``` would there ever possibly be a scenario where the rewardWindow starts and someone stakes in the same block.timestamp?
+
+
+[03/11/2023 08:56] descharre
+Staking participants may also stake BYTES 2.0 tokens into their S1 or S2 Citizens in order to boost the points weight of those Citizens at a rate of 200 BYTES per point.
+
+Does this mean you need 200 bytes for 1 extra base point?
+
+
+[03/11/2023 12:49] santipu_
+But `_pools[_assetType].rewardWindows[0].startTime` shouldn't always be zero?
+At least in the tests always the first `rewardWindows.startTime` is zero. Is there a possibility that it couldn't be zero?
+@tim-clancy.eth
+
+
+[03/11/2023 12:50] santipu_
+Always the first `startTime` is zero in tests
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - neotokyo-mar08 [1082395240566104216].txt_Files/image-D8CA2.png
+
+
+[03/11/2023 13:56] parsely.
+How does a Citizen S1 or S2 get the BYTES to stake? Or how does a user that wants to MINT a citizen get BYTES, to burn?
+
+
+[03/11/2023 16:54] rohlfing
+They can purchase bytes on an exchange
+
+{Reactions}
+👍 
+
+[03/11/2023 19:15] eme0242
+Bytes 1.0 can be upgraded to bytes2.0
+
+
+[03/11/2023 20:08] rebirthisnear
+Hi
+
+
+[03/11/2023 20:21] rebirthisnear
+@tim-clancy.eth check DM
+
+{Reactions}
+Thumbs_up 
+
+[03/12/2023 00:12] PrasadLak#0622
+@tim-clancy.eth check PM
+
+{Reactions}
+Thumbs_up 
+
+[03/12/2023 02:32] Atharva#1464
+@tim-clancy.eth Can you please explain what the no-ops BYTES2.updateReward and BYTES2.updateRewardOnMint do exactly and why they are required/in scope for the contest?
+
+
+[03/12/2023 02:45] tim_clancy.eth
+Correct; our intent is to deploy with similar settings to the test cases: the first reward window for each asset pool will have a start time of 0. Any other situation is administrator misconfiguration. I will add this to the FAQ.
+
+{Reactions}
+💯 
+
+[03/12/2023 02:50] tim_clancy.eth
+>  would there ever possibly be a scenario where the rewardWindow starts and someone stakes in the same block.timestamp
+
+In principle it is possible though unlikely that an admin configures a reward window (i.e. schedules some future change in the emission rate for a particular asset pool) to occur at some specific timestamp and a staker just so happens to enter the pool at that exact timestamp.
+
+In practice, now that we live in a post-Merge world with exactly 12 second block times, we can make sure that whatever time the admin configures could not possibly be a valid Ethereum mainnet `block.timestamp`.
+
+
+[03/12/2023 02:51] tim_clancy.eth
+Correct, that is the intent. 200 BYTES = 1 base point = 100 basis point points.
+
+{Reactions}
+✅ 
+
+[03/12/2023 02:54] tim_clancy.eth
+When we bring this staking system live we will update the mainnet Neo Tokyo S1 Citizens (`NTCitizenDeploy`) to begin referring to `BYTES2` instead of the current BYTES1. In the S1 Citizen smart contract, certain operations which we must maintain the functionality of (such as the ERC-721 `transferFrom` function) require calling `.updateReward` and `.updateRewardOnMint` on the BYTES contract. The original logic for what these functions used to do is no longer applicable because we're moving to the `NeoTokyoStaker` for all logic related to earning `BYTES2` tokens, but we need the no-op to not break things in the S1 Citizen contract.
+
+{Reactions}
+👍🏻 
+
+[03/12/2023 03:07] Atharva#1464
+Got it, thanks 👍🏻
+
+
+[03/12/2023 09:34] haipls
+Is the statement correct: that all possible options for harming users by the administrator (example: blocking stake or withdrawals, etc.) are Out of Scope?
+
+
+[03/12/2023 12:09] aba1842
+@tim-clancy.eth when you have the time, could you please add me as a friend so I can ask some questions? (you have friend requests off, so I can't send one)
+
+
+[03/12/2023 14:18] 0xkazimm
+yeah same here , i have some Question and i can't add him !
+
+
+[03/12/2023 15:41] tim_clancy.eth
+Yes.
+
+
+[03/12/2023 15:42] tim_clancy.eth
+You can still send me a message request and I will answer. 🙂
+
+{Reactions}
+thankyou 
+
+[03/12/2023 16:15] aba1842
+~~ok, sorry to bother you, am I doing something wrong?~~ never mind, found the issue, I can't send message requests if I have direct messaging blocked on my end. Thanks!
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - neotokyo-mar08 [1082395240566104216].txt_Files/image-A0393.png
+
+
+[03/12/2023 23:04] chaindev
+for High/Medium issues, the attacking code in ts is required?
+Can I do only with sentences?
+
+
+[03/13/2023 05:05] nameruse#6452
+Hi, is BYTES2.getReward() only called upon the user's request or is it also called automatically at a certain point?
+
+
+[03/13/2023 05:57] kutugu
+Can you run the tests correctly? An error occurs when I run the test file `test/NeoTokyoStaker.test.js:415:15`
+```
+AssertionError: expected BigNumber { value: "2" } to equal 2
+```
+When I comment it out, I get a bunch of other assertionErrors
+
+Even when I wrote a new test on foundry, the contract wouldn't run due to `Identifier already declared`
+
+
+[03/13/2023 06:14] kutugu
+It's the node version. When I switched from 14 to 16, everything worked.
+
+
+[03/13/2023 06:27] aba1842
+I had this exact problem. This fixed it https://discord.com/channels/810916927919620096/1082395240566104216/1083258473506152468
+
+
+[03/13/2023 06:32] aba1842
+Oh, didn't see your response here, glad you fixed it
+
+{Reactions}
+❤️ 
+
+[03/13/2023 09:55] golanger
+Hi Tim, how many bytes tokens will be allowed to enter circulation?
+
+
+[03/13/2023 16:15] PrasadLak#0622
+@tim-clancy.eth Pls check PM.
+
+{Reactions}
+Thumbs_up 
+
+[03/13/2023 16:46] auditor0517
+@tim-clancy.eth Can I DM you?
+
+{Reactions}
+Thumbs_up 
+
+[03/13/2023 17:03] 0xwander
+@tim-clancy.eth can you explain the reward window in a more clear way ?
+
+
+[03/13/2023 18:46] tim_clancy.eth
+A test case demonstrating the attack would be greatly preferable, but a reasonably-detailed description of how the attack might work such that I can at least go and implement that test case myself later is acceptable.
+
+{Reactions}
+👍 (2) 
+
+[03/13/2023 18:47] tim_clancy.eth
+This is intended to be called by a user only when they decide to claim (or someone else pays gas to claim on their behalf).
+
+{Reactions}
+👍 
+
+[03/13/2023 18:49] tim_clancy.eth
+Supply is intended to asymptotically approach 5M total BYTES tokens, i.e. with 18 decimal places `5_000_000_000000000000000000`.
+
+{Reactions}
+👍 
+
+[03/13/2023 19:02] golanger
+Ok thanks and is this a combination of bytes 1 and 2 tokens? Or just the latter?
+
+
+[03/13/2023 19:04] tim_clancy.eth
+The combination of the two. Assuming that the current ~2.17M BYTES1 eventually get migrated into BYTES2.
+
+
+[03/13/2023 19:06] tim_clancy.eth
+https://discord.com/channels/810916927919620096/1082395240566104216/1083446168295575582 does this help? If you need some additional clarification I'm happy to provide it.
+
+
+[03/13/2023 19:20] golanger
+And once it approaches the maximum amount in circulation, is a mechanism triggered to reduce the supply? Or is there a manual trigger for this?
+
+
+[03/13/2023 19:24] tim_clancy.eth
+This is manually admin-adjusted using `configurePools` to schedule diminishing returns over time.
+
+
+[03/13/2023 20:05] golanger
+Ok great, and is that designed to reduce the “rewards window” over time to prevent rewards being claimed? Is there a specific timeframe for this?
+
+
+[03/13/2023 20:06] tim_clancy.eth
+The idea is to reduce the emissions rate over time; rewards that you earned in a prior window are not intended to be reduced (it is possible to rugpull a user on prior earnings but that would fall under the matter of administrative misconfiguration).
+
+{Reactions}
+👍 
+
+[03/13/2023 20:07] tim_clancy.eth
+There is no specific timeframe at this time for administrator-triggered reward adjustment, no.
+
+
+[03/13/2023 21:57] golanger
+Ok that’s great thanks for your time
+
+{Reactions}
+Thumbs_up 
+
+[03/14/2023 01:35] 0xjuancito
+What are some valid values for the `timelockOptions`?
+
+
+[03/14/2023 01:59] kenzoagada
+You can see that in the tests
+
+{Reactions}
+👍 
+
+[03/14/2023 05:04] drdounge
+"npm install" seems not to work on your project. When I do "npm ls", I get a lot of errors, for example:
+
+├── hardhat-contract-sizer@ invalid: "^2.1.1" from the root project
+├── hardhat-gas-reporter@ invalid: "^1.0.4" from the root project
+├── hardhat@ invalid: "^2.12.2" from the root project
+
+"npx hardhat test" also not possible then. Have asked Google, it suggested some "npm update", but that didn't help either. I'm acutally a Python coder, my nodejs knowledge is thus pretty flat, but since everyone in web3 seems to prefer Javascript, I unfortunately must adapt sometimes 😌 Am a bit puzzled now. I'm running Debian 11, everything up-to-date, using the latest npm stable version.
+
+
+[03/14/2023 06:32] drdounge
+... tried now on Ubuntu 22.04, pretty much same problem:
+
+├── UNMET DEPENDENCY hardhat-contract-sizer@^2.1.1
+├── UNMET DEPENDENCY hardhat-gas-reporter@^1.0.4
+├── UNMET DEPENDENCY hardhat@^2.12.2
+
+Everything up-to-date. Tried with node 18, 16 and 14 (just to be sure). Not sure what else to try now. I mean I could try to update all modules AND the version declarations in the package.json . But I doubt that this makes sense, cause it changes the whole project.
+
+
+[03/14/2023 08:05] dravee
+Odd, but ok. Changing the version of hardhat shouldn't change the project too much as these are dev dependencies (tooling). You're not touching OZ's libs, as an example. Try to change the versions. Try to use yarn instead of npm. Try deleting the package-lock.json file. Try cleaning the cache with npm. 
+I have no issue with the project, but I'm on MacOS
+
+Edit: try installing those independently, like `npm install hardhat-gas-reporter`, you can add `--save-dev` to overwrite the version in package.json
+
+
+[03/14/2023 08:09] parsely.
+Just to share I ran npm install, and did not run into any issues, the tests run without an error.
+
+
+[03/14/2023 08:10] dravee
+Thanks! Which OS are you using?
+
+
+[03/14/2023 08:12] parsely.
+Ubuntu 22.10 on a Qemu virt machine.
+
+
+[03/14/2023 08:18] aba1842
+if all else fails, try `yarn` instead of `npm`. It worked effortlessly for me
+
+
+[03/14/2023 08:22] parsely.
+npm -v gives me 9.4.0
+
+
+[03/14/2023 11:51] ubl4nk#1934
+Hello guys, can someone give me some details about the point and multiplier in NeoTokyoStaking ?
+
+
+[03/14/2023 16:03] drdounge
+@parsely @ABA Thanks guys, I'll try all that now.
+
+
+[03/14/2023 18:01] milotruck
+@tim-clancy.eth May I DM you? Have a question
+
+
+[03/14/2023 18:31] drdounge
+@parsely @ABA 
+
+yarn got it solved for me. Haven't tried anything else of your suggested solutions.
+
+But it's still pretty strange. Especially my attempts on Ubuntu 22.04 should have worked, because it is a totally fresh setup VPS on Oracle Cloud. Also my Debian 11 attempts have been a totally fresh setup via vagrant and Virtual Box (though my Virtual Box is a bit outdated, but I don't think that this is a problem here).
+
+But well, maybe it only works on Ubuntu 22.10 ??? Strange also that noone else reported about this issue. Maybe there are 90% macOS and Windows users here, and the 10% Linux guys use yarn lol.
+
+I have used nvm. But I believe this is still the standard, right?
+
+But now back to looking for web3 instead of node bugs. Thanks everyone for your help!
+
+
+[03/14/2023 18:34] parsely.
+Glad it's resolved.
+
+{Reactions}
+👍 (2) 
+
+[03/14/2023 21:06] glcanvas
+@tim-clancy.eth hello! sent you DM
+
+{Reactions}
+Thumbs_up 
+
+[03/15/2023 00:51] madalad
+@tim-clancy.eth sent dm 🙂
+
+{Reactions}
+Thumbs_up 
+
+[03/15/2023 10:23] golanger
+Hi Tim, as a user can I choose to not have a timelock bonus to my stake? And just stake my bytes into either citizens?
+
+
+[03/15/2023 10:55] mahdi9606
+@tim-clancy.eth dmed you
+
+{Reactions}
+Thumbs_up 
+
+[03/15/2023 12:43] eierina
+@tim-clancy.ethsent you a DM
+
+{Reactions}
+Thumbs_up 
+
+[03/15/2023 14:15] adriro
+@tim-clancy.eth is there any reason to why pools.rewardWindows is a mapping and not an array? seems it's being used exactly as an array.
+
+
+[03/15/2023 15:38] 0xweiss
+whats the supposed IdentityCreditPoints for Citizens1 ?
+
+
+[03/15/2023 16:25] PrasadLak#0622
+@tim-clancy.eth pls check PM.
+
+{Reactions}
+Thumbs_up 
+
+[03/15/2023 17:04] tim_clancy.eth
+We intend to always enforce a minimum timelock duration which will just give a 1x multiplier. Staking BYTES into Citizens inherently comes with a timelock given that the Citizens themselves have a timelock component.
+
+{Reactions}
+✅ 
+
+[03/15/2023 17:07] tim_clancy.eth
+Conventional wisdom is that it is more gas-efficient to use a mapping instead of an array with what I'm using them for here. Other than that no real reason. Personal ergonomics, I suppose.
+
+{Reactions}
+👍 
+
+[03/15/2023 17:08] tim_clancy.eth
+```js
+/*
+    Identities are given new configurable basis points for determining the share
+    of BYTES rewards that they compete for based on their previous credit yield
+    values.
+*/
+export const IDENTITY_CREDIT_POINTS = {
+    identityCreditYieldRates: [ 'Low', 'Mid', 'High' ],
+    points: [ 100, 200, 300 ]
+};
+```
+
+
+[03/15/2023 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Neo Tokyo** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+👍 (19) hi5 (7) 😍 (5) 
+
+[03/15/2023 20:02] cluna80
+whos the winners?
+
+
+[03/15/2023 20:02] tim_clancy.eth
+:milady_heart:
+
+
+[03/15/2023 20:02] tim_clancy.eth
+that's not how this works
+
+
+[03/15/2023 20:02] cluna80
+ok
+
+
+[03/15/2023 20:03] cluna80
+im still new
+
+{Reactions}
+milady_heart (6) 
+
+[03/15/2023 20:03] parsely.
+Thank you for allowing us to participate.
+
+
+[03/15/2023 20:04] madalad
+ty
+
+
+[03/15/2023 20:04] madalad
+for the help @tim-clancy.eth and gl everyone !
+
+{Reactions}
+pinkheart (2) 
+
+[03/15/2023 20:06] 0xkazimm
+It was ả really great contest and they write the code very professionally. Thanks to @tim-clancy.eth  for helping us
+
+{Reactions}
+pinkheart 
+
+[03/15/2023 20:20] aba1842
+@tim-clancy.eth thanks for your continuous support! Wish you well on your bugfixing and hope to see you in the leaderboards 😄
+
+{Reactions}
+pinkheart 
+
+[03/15/2023 21:15] Deleted User
+Great contest, thanks @tim-clancy.eth for helping
+
+{Reactions}
+pinkheart 
+
+[03/15/2023 23:55] codeislight
+milady!
+
+{Reactions}
+pinkheart 
+
+[03/16/2023 01:24] exd0tpy
+It was a great contest😉
+
+
+[03/16/2023 02:07] t.nero
+Definitely you are one. 👍
+
+{Reactions}
+😄 
+
+[03/16/2023 02:38] cluna80
+lol
+
+
+[03/16/2023 07:15] aba1842
+honestly I was expecting the Milady gang to be here sooner :)) you guys waited patiently until the contest was over ha ha
+
+{Reactions}
+😂 (3) ❤️ (3) 
+
+[03/16/2023 07:39] codeislight
+always!
+
+{Reactions}
+🔥 🤍 (2) 
+
+[03/16/2023 11:57] coffiasd
+It was a great contest
+
+
+[03/31/2023 11:40] shealtielanz
+hello
+
+{Reactions}
+🙌 (5) 
+
+[04/03/2023 19:34] tataky#6898
+Are the results coming soon?
+
+
+[04/03/2023 19:40] 0xjuancito
+The contest is on the judging phase according to the #📢announcements
+
+{Reactions}
+👍🏻 (4) 
+
+[04/05/2023 01:42] itsmetechjay
+:code4rena: 💸 🎉 Awards for **Neo Tokyo**:
+
+$3,665.60 USDC » @adriro 
+$3,209.67 USDC » @Haipls 
+$3,209.67 USDC » @rbserver 
+$3,004.10 USDC » @ABA 
+$3,004.10 USDC » @minhquanym 
+$2,974.43 USDC » @J4de 
+$2,974.43 USDC » @auditor0517 
+$2,868.66 USDC » @Madalad 
+$2,849.36 USDC » @Dug 
+$2,849.36 USDC » @joestakey 
+$2,819.69 USDC » @ast3ros 
+$2,819.69 USDC » @sinarette 
+$2,819.69 USDC » @kutu 
+$455.71 USDC » @0xSmartContract  
+$385.13 USDC » @0xhacksmithh 
+$385.13 USDC » @Rolezn 
+$385.13 USDC » @Sathish9098 
+$334.30 USDC » @carlitox477 
+$235.24 USDC » @0xcatellatech 
+$235.24 USDC » @Dravee 
+$235.24 USDC » @DevABDee  
+$235.24 USDC » @btk 
+$235.24 USDC » @saian 
+$235.24 USDC » @zaskoh 
+$230.83 USDC » @rokso 
+$203.71 USDC » @RaymondFam 
+$203.71 USDC » @ulqiorra 
+$194.86 USDC » @JCN 
+$184.41 USDC » @jekapi 
+$184.41 USDC » @DadeKuma 
+$184.41 USDC » @Kaden 
+$184.41 USDC » @Jeiwan 
+$184.41 USDC » @juancito 
+$184.41 USDC » BPZ (pa6221, @Bitcoinfever244, @PrasadLak)
+$179.56 USDC » @matrix_0wl 
+$179.56 USDC » @thinklab 
+$179.56 USDC » @nadin 
+$174.04 USDC » @0xnev 
+$154.74 USDC » @Lirios 
+$154.74 USDC » @Ruhum 
+$154.74 USDC » @nobody2018 
+$154.74 USDC » @aashar 
+$154.74 USDC » @LegendFenGuin 
+$154.74 USDC » @anodaram 
+$154.74 USDC » @kenzo 
+$154.74 USDC » UdarTeam (@AhmeT, @tourist)
+$154.74 USDC » @Krace 
+$154.74 USDC » @0x52 
+$154.74 USDC » @madwookie 
+$154.74 USDC » @cccz 
+$154.74 USDC » @ak1 
+$154.74 USDC » @Josiah 
+$154.74 USDC » @Toshii 
+$149.89 USDC » @ReyAdmirado 
+$149.89 USDC » @c3phas 
+$149.89 USDC » @hunter_w3b 
+$48.97 USDC » @0xpathfindr 
+$48.97 USDC » @fatherOfBlocks 
+$48.97 USDC » @matricksdecoder  
+$48.97 USDC » Inspex (@Resistor, @jokopoppo, @mimic_f, @rugsurely, @ErbaZZ)
+$48.97 USDC » @descharre 
+$48.97 USDC » @SAAJ 
+$48.97 USDC » @ayden 
+$48.97 USDC » @0xSolus 
+$48.97 USDC » @glcanvas 
+$48.97 USDC » @codeislight 
+$48.97 USDC » @Viktor_Cortess 
+$48.97 USDC » @Diana 
+$48.97 USDC » @slvDev 
+$48.97 USDC » @atharvasama 
+$48.97 USDC » @0x1f8b 
+$48.97 USDC » @Udsen
+
+
+[04/05/2023 01:42] itsmetechjay
+$29.67 USDC » @Taloner 
+$29.67 USDC » @deadrosesxyz 
+$29.67 USDC » @lemonr 
+$29.67 USDC » @parsely 
+$29.67 USDC » @0x1337 
+$29.67 USDC » @chaduke 
+$29.67 USDC » @pfedprog 
+$29.67 USDC » @ubl4nk 
+$29.67 USDC » @jasonxiale 
+$29.67 USDC » @Englave 
+$29.67 USDC » scokaf (@Scoon, @jauvany)
+$29.67 USDC » @navinavu 
+$29.67 USDC » @yamapyblack 
+$29.67 USDC » @Santipu_ 
+$29.67 USDC » @DevLuke 
+$29.67 USDC » DeFiHackLabs (@SunSec, @gbaleee, @anon, @Aits, @Rappie)
+$29.67 USDC » @0xAgro 
+$29.67 USDC » @brgltd 
+$29.67 USDC » @luxartvinsec 
+$29.67 USDC » @ctrlc03 
+$29.67 USDC » @iceBear 
+$29.67 USDC » @Bitspinner 
+$29.67 USDC » @HandsomeGiraffe 
+$29.67 USDC » @Deleted User 
+$29.67 USDC » @EricTee 
+$29.67 USDC » @martin | Founder @ ShieldifySec 
+$29.67 USDC » @MyFDsYours 
+$29.67 USDC » @0xWeiss 
+$29.67 USDC » @0x6980 
+$29.67 USDC » @peanuts 
+$29.67 USDC » @tsvetanovv 
+$29.67 USDC » @Go-Langer 
+$29.67 USDC » @0xkazim 
+$29.67 USDC » @Bjorn_Bug  
+$29.67 USDC » @favelanky 
+$29.67 USDC » @Deathstore 
+$29.67 USDC » @Kresh 
+$19.30 USDC » @arialblack14 
+$19.30 USDC » @R-Nemes 
+$19.30 USDC » @ginlee 
+$19.30 USDC » @volodya 
+$19.30 USDC » @MiniGlome (Mlome) 
+$19.30 USDC » @schrodinger 
+$19.30 USDC » @pipoca 
+$19.30 USDC » @Shubham 
+$19.30 USDC » @durianSausage 
+$19.30 USDC » @Doogoo 
+$19.30 USDC » @dharma09 
+$19.30 USDC » @Angry_Mustache_Man 
+$19.30 USDC » @code-cipher 
+$19.30 USDC » @leopoldjoy
+
+🏁 Findings summary
+---------------------------
+High risk findings: 45 total, 2 unique
+Med risk findings: 0 
+Gas reports: 46 
+QA reports: 83
+
+Awards will be distributed on Polygon within the next week. Congratulations, everyone! 💸 💸 💸
+
+*Note: If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+chefskiss (10) 🎆 (5) ❤️‍🔥 (2) hi5 (2) 🎉 (2) 
+
+[04/05/2023 01:43] carlitox477
+Bien ahi @adriro !!!!
+
+{Reactions}
+❤️ 🙌 
+
+[04/05/2023 01:44] 0xkazimm
+Congratulations everyone 🎉👏🏻
+
+
+[04/05/2023 01:50] 0xcatellatech
+Crack
+
+
+[04/05/2023 01:58] 0xnevi
+Omg i found my first high!!!
+
+{Reactions}
+hi5 (9) 🎉 (7) 👍 
+
+[04/05/2023 01:58] 0xnevi
+Congrats everyone
+
+
+[04/05/2023 02:24] 0xhacksmithh
+Can pls anyone share that GitHub CSV link(sorry i don't know exact name of that) where we can know which bug of our get selected...
+
+
+[04/05/2023 02:29] 0xjuancito
+https://github.com/code-423n4/code423n4.com/pull/8885/files
+
+{Embed}
+https://github.com/code-423n4/code423n4.com/pull/8885/files
+Add 220 to Leaderboard by liveactionllama · Pull Request #8885 · co...
+Code4rena - ARCHIVE-Q1-2023 - neotokyo-mar08 [1082395240566104216].txt_Files/98446738-1A1F9
+
+{Reactions}
+👍 (2) 
+
+[04/05/2023 02:29] viktor_cortess
+Is it possible to see if my submission was downgraded? Or I'll see it only with a report?
+
+
+[04/05/2023 02:32] 0xhacksmithh
+Thanks
+
+{Reactions}
+👌 
+
+[04/05/2023 02:47] viktor_cortess
+Interesting to see the final report. There is a big difference in Gas and QA payments between participants. What could be so optimizable in just 2 contracts.
+
+
+[04/05/2023 03:22] krace_h
+wow
+
+
+[04/05/2023 06:38] angry_mustache_man
+Congratulations everyone, happy to find my name in the list. This was my first contest and I just reported few gas findings.
+
+
+[04/05/2023 06:43] shubh0412
+Same. First win 😅
+
+{Reactions}
+👍 (2) 
+
+[04/05/2023 06:55] golanger
+Congrats everyone 👊🏽
+
+
+[04/05/2023 06:57] chaindev
+I've submitted 2 issues. 
+findings.csv says my only issue is H-2
+I want to know which one is rejected
+Hope to DM with @tim-clancy.eth
+
+
+[04/05/2023 07:09] slvdev
+@anodaram I think you need to wait until when a report will be public
+
+
+[04/05/2023 07:33] hunter_w3b
+Congrats 🎉 to everyone ☺️
+
+
+[04/05/2023 08:02] madalad
+First 4 figure reward 🥳🥳
+
+{Reactions}
+🔥 (7) 
+
+[04/05/2023 08:03] eme0242
+Congrats guys 🎉🎉
+
+
+[04/05/2023 08:47] devabdee
+Alhumdulilah ❤️‍🔥🙂
+Congrats Everyone 🎉🙌
+
+
+[04/05/2023 09:28] chaindev
+please discard my message. I will just wait for the final report
+
+
+[04/05/2023 09:28] chaindev
+sure
+
+
+[04/05/2023 16:42] road220
+@tim-clancy.eth , hey, is it possible to dm you quick? Thanks!
+
+
+[04/05/2023 16:43] tim_clancy.eth
+Yes, I should have message requests on for this server.
+
+
+[04/05/2023 20:15] aba1842
+congrats to all! an interesting outcome. Can't wait for the report, like you guys already mentioned, to see how were the QA/gas reports, as they weighed in quite a bit
+
+{Reactions}
+👍 
+
+[04/05/2023 21:49] dadekuma
+congrats to all! 🎉 the second high issue was found by a lot of wardens!
+
+{Reactions}
+🔥 (2) 
+
+[04/06/2023 16:06] chaindev
+I also wonder about so many H-2.
+
+
+[04/06/2023 17:07] 0xnirlin
+How there are 45 highs and 0 mediums 👾
+
+
+[04/06/2023 17:36] dugdaniels
+There were 2 highs.
+
+
+[04/12/2023 08:05] aba1842
+hey, @hansfriese , in the hopes of bettering myself for the future, could you, please, if you have the time, give some feedback on what was lacking on my issue that it got a `grade-b` and not `grade-a`? (I see the wrong formating, is that it?)
+https://github.com/code-423n4/2023-03-neotokyo-findings/issues/115
+
+
+[04/12/2023 08:42] hansfriese
+@ABA 
+Your submission was downgraded to QA as it's about the normal rounding issue.
+And each QA should be marked as grade-a/b/c. So `grade-b` is not the score of that issue only, it's for your QA report.
+
+{Reactions}
+🤍 🙏 
+
+[04/12/2023 08:45] aba1842
+the downgrading to QA I understood, I did not knew that the grade is for all downgraded issues + QA report. Thank you! That makes sense
+
+{Reactions}
+👍 (2) 
+
+[04/12/2023 10:03] dadekuma
+hi @hansfriese, I also wanted to ask you a question if possible 🙏🏼 
+
+https://github.com/code-423n4/2023-03-neotokyo-findings/issues/227
+
+My issue was satisfactory and then considered out of scope. I checked the contest rules again, and it says:
+
+> The only contracts that are in scope for this contest are the two listed below, excluding any concerns regarding centralization or malicious administrator risk.
+
+As it wasn't considered a malicious act, but it's the intended usage, I don't get why it should be considered out of scope.
+
+Sponsor replied:
+
+> Out of scope because we assume that the admin is competent and non-malicious; there is no operational intent to ever change timelock values in this fashion.
+
+But it's for neither of these reasons, as this function is meant to be reusable. You can only append new timelocks safely, but if you override the existing ones it causes issues, and this isn't documented anywhere.
+
+It would be great if you could explain the reasoning behind this 🙏🏼
+
+
+[04/12/2023 11:04] hansfriese
+Let me explain
+1. `configureTimelockOptions()` is out of scope.
+2. This becomes problematic after the admin changed the multiplier settings. But from the sponsor's comment at #324, `there is no operational intent to ever change timelock values in this fashion`
+There were some other submissions about the admin misconfiguration and they were all marked as out of scope according to the contest's disclaimer. The ReadMe says all submissions about the admin misconfiguration are out of scope.
+
+{Reactions}
+thankyou (2) 
+
+[04/12/2023 15:54] dadekuma
+my bad, it was in the list of out of scope functions, I didn't notice. Thanks for the explanation! :hi5:
+
+
+[04/12/2023 15:54] hansfriese
+No worries
+
+
+[04/12/2023 16:03] 0xjuancito
+Thanks @hansfriese for leaving some comment on primary issues. That helps get an idea of the decisions
+
+{Reactions}
+💯 (3) 🙏 
+
+[04/13/2023 13:36] infectedfuture
+Hey, how can we find our own submission from here ? https://github.com/code-423n4/2023-03-neotokyo-findings/issues
+
+
+[04/13/2023 14:20] deekshith09
+Click on Code then Data
+Their you will find your submissions
+
+
+[04/13/2023 21:41] infectedfuture
+thanks !
+
+
+[04/25/2023 08:43] alexczm
+Hi, I was reading the report and if the Hs are clear, I don't understand L-08 
+`[L-08] Keccak Constant values should used to immutable rather than constant`
+https://code4rena.com/reports/2023-03-neotokyo/#l-08-keccak-constant-values-should-used-to-immutable-rather-than-constant
+Why `immutable` is recommended instead of `constant`  in this case?
+
+{Embed}
+https://code4rena.com/reports/2023-03-neotokyo/
+Neo Tokyo contest
+The future of audits is decentralized.
+Code4rena - ARCHIVE-Q1-2023 - neotokyo-mar08 [1082395240566104216].txt_Files/c4-og-banner-0FCFA.png
+
+
+[04/25/2023 14:24] 0xsmartcontract
+In Quality Assurance Engineering, the perspectives may not be the same as in M and H, we see that here too.
+
+
+The issue is related to the use of constant and immutable variables in the Keccak algorithm. Specifically, the Keccak Constant values should be used as immutable rather than constant variables. 
+
+Constant context is ; It should not calculate, it was not written directly, for example; uint256 constant = 5;
+
+
+This is a context, blockchain and EVM are very new concepts, they are constantly developing, but they are still in their infancy, so separating the concepts clearly shows a more correct development for the future, you can think of it as the philosophical side of software
+
+{Reactions}
+👍 
+
+[04/27/2023 07:16] alexczm
+Hey, so what I've got is even if there is no difference (in the sense of side effects) between using constant vs immutable in this case, we should respect a good practice list to make our life easier in future and avoid mixing the concepts. Thank you for answering my Q.
+
+{Reactions}
+👍 
+
+==============================================================
+Exported 209 message(s)
+==============================================================
